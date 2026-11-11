@@ -1,0 +1,6 @@
+{
+  "sent_xlmr_all": 0.9219,
+  "sent_camelbert_da_ar": 0.9083,
+  "tfidf_char": 0.9171,
+  "tfidf_word": 0.8725
+}

@@ -1,0 +1,94 @@
+{
+  "precision": "int8",
+  "users": 16,
+  "seconds": 20,
+  "requests": 257,
+  "errors": 0,
+  "rps": 15.1,
+  "p50_ms": 912.72,
+  "p95_ms": 1989.72,
+  "p99_ms": 2006.25,
+  "max_ms": 2030.24,
+  "meets_p99_le_40ms": false,
+  "headline_mean_think_ms": 0.0,
+  "runs": [
+    {
+      "mean_think_ms": 0.0,
+      "users": 16,
+      "seconds": 20,
+      "requests": 257,
+      "errors": 0,
+      "rps": 15.1,
+      "p50_ms": 912.72,
+      "p95_ms": 1989.72,
+      "p99_ms": 2006.25,
+      "max_ms": 2030.24,
+      "meets_p99_le_40ms": false
+    },
+    {
+      "mean_think_ms": 100.0,
+      "users": 16,
+      "seconds": 20,
+      "requests": 278,
+      "errors": 0,
+      "rps": 16.4,
+      "p50_ms": 817.32,
+      "p95_ms": 1439.49,
+      "p99_ms": 1735.72,
+      "max_ms": 1767.41,
+      "meets_p99_le_40ms": false
+    },
+    {
+      "mean_think_ms": 250.0,
+      "users": 16,
+      "seconds": 20,
+      "requests": 280,
+      "errors": 0,
+      "rps": 16.5,
+      "p50_ms": 653.11,
+      "p95_ms": 1491.27,
+      "p99_ms": 1617.0,
+      "max_ms": 1668.69,
+      "meets_p99_le_40ms": false
+    },
+    {
+      "mean_think_ms": 500.0,
+      "users": 16,
+      "seconds": 20,
+      "requests": 294,
+      "errors": 0,
+      "rps": 17.3,
+      "p50_ms": 278.76,
+      "p95_ms": 1264.06,
+      "p99_ms": 1718.65,
+      "max_ms": 1787.97,
+      "meets_p99_le_40ms": false
+    }
+  ],
+  "micro_batch": {
+    "max_batch": 16,
+    "max_wait_ms": 2.0
+  },
+  "server_threads": 2,
+  "hardware": {
+    "cpu_model": "Intel(R) Xeon(R) CPU @ 2.00GHz",
+    "logical_cores": 2,
+    "python": "3.13.16",
+    "torch": "2.14.1+cu130",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39"
+  },
+  "service_health": {
+    "status": "ok",
+    "precision": "int8",
+    "versions": {
+      "preproc": "1.0.0",
+      "service": "1.0.0",
+      "index": "cases_v1"
+    },
+    "canaries_ok": true,
+    "n_canary_checks": 15
+  },
+  "caveat": "load generator and server share the same 2-vCPU Colab VM; the lab CPU may differ",
+  "model": "topic_xlmr_all_ca",
+  "router_enabled": false
+}

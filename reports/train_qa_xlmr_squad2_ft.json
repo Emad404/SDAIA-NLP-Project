@@ -1,0 +1,56 @@
+{
+  "name": "qa_xlmr_squad2_ft",
+  "checkpoint": "deepset/xlm-roberta-base-squad2",
+  "zero_shot": false,
+  "null_margin_threshold": -8.0,
+  "val": {
+    "answerable_em": 0.8444444444444444,
+    "answerable_f1": 0.9688888888888888,
+    "null_acc": 1.0,
+    "n_answerable": 45,
+    "n_null": 19,
+    "score": 0.9844444444444445
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.3299486344230586,
+      "seconds": 6.6,
+      "score": 0.966031746031746,
+      "val_f1": 0.9320634920634919,
+      "val_null_acc": 1.0,
+      "thr": -8.0
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.024856375209216415,
+      "seconds": 6.2,
+      "score": 0.9844444444444445,
+      "val_f1": 0.9688888888888888,
+      "val_null_acc": 1.0,
+      "thr": -8.0
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.005641336456455034,
+      "seconds": 6.2,
+      "score": 0.974920634920635,
+      "val_f1": 0.9498412698412698,
+      "val_null_acc": 1.0,
+      "thr": -8.0
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.007814943148144361,
+      "seconds": 6.2,
+      "score": 0.974920634920635,
+      "val_f1": 0.9498412698412698,
+      "val_null_acc": 1.0,
+      "thr": -8.0
+    }
+  ],
+  "best_epoch": 2,
+  "n_train": 452,
+  "n_val": 64,
+  "preproc_version": "1.0.0"
+}

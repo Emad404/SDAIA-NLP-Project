@@ -1,0 +1,60 @@
+{
+  "name": "topic_xlmr_gulf_ft",
+  "task": "topic",
+  "checkpoint": "xlm-roberta-base",
+  "lang": "ar",
+  "profile": "xlmr",
+  "labels": [
+    "account_access",
+    "appointments",
+    "billing",
+    "digital_services",
+    "outage",
+    "permits",
+    "transport",
+    "waste"
+  ],
+  "preproc_version": "1.0.0",
+  "seed": 42,
+  "epochs_run": 3,
+  "best_epoch": 1,
+  "lr": 1e-05,
+  "bs": 32,
+  "max_len_train": 96,
+  "max_len_infer": 128,
+  "case_aug": 0.35,
+  "n_train": 10821,
+  "n_val": 1634,
+  "val_macro_f1": 0.8639,
+  "val_ci": [
+    0.8391,
+    0.8846
+  ],
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.3894038574754699,
+      "seconds": 47.0,
+      "score": 0.8623403873277098,
+      "arabic_val_macro_f1": 0.863945792075013
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.3606431784708638,
+      "seconds": 45.9,
+      "score": 0.8458626527113684,
+      "arabic_val_macro_f1": 0.8583747626315328
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.33232923529364844,
+      "seconds": 46.5,
+      "score": 0.8491826709822319,
+      "arabic_val_macro_f1": 0.8547804163937149
+    }
+  ],
+  "adapted_from": "topic_xlmr_all_ca",
+  "gulf_oversample": 3,
+  "gulf_val_macro_f1_before": 0.8765,
+  "gulf_val_macro_f1_after": 0.8623
+}

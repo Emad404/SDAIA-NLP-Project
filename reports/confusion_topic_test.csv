@@ -1,0 +1,9 @@
+topic,account_access,appointments,billing,digital_services,outage,permits,transport,waste
+account_access,247,31,8,2,2,1,0,2
+appointments,4,311,6,0,0,6,1,0
+billing,0,15,332,1,0,5,0,0
+digital_services,10,27,20,218,9,0,0,1
+outage,0,15,12,2,261,1,0,10
+permits,0,25,28,0,3,243,0,0
+transport,0,16,9,0,1,0,231,5
+waste,1,11,6,0,6,0,4,236

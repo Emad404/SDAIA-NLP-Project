@@ -1,0 +1,57 @@
+{
+  "name": "sent_camelbert_da_ar",
+  "task": "sentiment",
+  "checkpoint": "CAMeL-Lab/bert-base-arabic-camelbert-da",
+  "lang": "ar",
+  "profile": "camelbert",
+  "labels": [
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "preproc_version": "1.0.0",
+  "seed": 42,
+  "epochs_run": 4,
+  "best_epoch": 2,
+  "lr": 3e-05,
+  "bs": 32,
+  "max_len_train": 96,
+  "max_len_infer": 128,
+  "n_train": 3964,
+  "n_val": 889,
+  "val_macro_f1": 0.9083,
+  "val_ci": [
+    0.8884,
+    0.9272
+  ],
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.5919466667598293,
+      "seconds": 14.3,
+      "score": 0.8984292558105138,
+      "val_acc": 0.9010123734533183
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.3452079680658156,
+      "seconds": 14.3,
+      "score": 0.9083141157907514,
+      "val_acc": 0.9111361079865017
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.32106282970597666,
+      "seconds": 14.4,
+      "score": 0.905017158915164,
+      "val_acc": 0.9077615298087739
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.2929783059704688,
+      "seconds": 14.0,
+      "score": 0.9048651785958001,
+      "val_acc": 0.9077615298087739
+    }
+  ]
+}

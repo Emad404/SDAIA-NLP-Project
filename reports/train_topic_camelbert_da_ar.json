@@ -1,0 +1,55 @@
+{
+  "name": "topic_camelbert_da_ar",
+  "task": "topic",
+  "checkpoint": "CAMeL-Lab/bert-base-arabic-camelbert-da",
+  "lang": "ar",
+  "profile": "camelbert",
+  "labels": [
+    "account_access",
+    "appointments",
+    "billing",
+    "digital_services",
+    "outage",
+    "permits",
+    "transport",
+    "waste"
+  ],
+  "preproc_version": "1.0.0",
+  "seed": 42,
+  "epochs_run": 3,
+  "best_epoch": 1,
+  "lr": 3e-05,
+  "bs": 32,
+  "max_len_train": 96,
+  "max_len_infer": 128,
+  "n_train": 3964,
+  "n_val": 889,
+  "val_macro_f1": 0.8705,
+  "val_ci": [
+    0.8465,
+    0.8906
+  ],
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.2789658303222349,
+      "seconds": 14.0,
+      "score": 0.8704551564085292,
+      "val_acc": 0.8706411698537683
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.40536980138671014,
+      "seconds": 13.9,
+      "score": 0.8631291984401881,
+      "val_acc": 0.8683914510686164
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.34662273069543226,
+      "seconds": 14.4,
+      "score": 0.8557676414762143,
+      "val_acc": 0.8650168728908887
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "name": "ner_xlmr",
+  "checkpoint": "xlm-roberta-base",
+  "labels": [
+    "O",
+    "B-LOCATION",
+    "B-PERSON",
+    "B-SERVICE",
+    "I-LOCATION",
+    "I-PERSON",
+    "I-SERVICE"
+  ],
+  "preproc_version": "1.0.0",
+  "val_entity_f1": 0.9902,
+  "val_per_type": {
+    "LOCATION": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 516.0
+    },
+    "PERSON": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 436.0
+    },
+    "SERVICE": {
+      "precision": 0.9462962962962963,
+      "recall": 1.0,
+      "f1-score": 0.972407231208373,
+      "support": 511.0
+    }
+  },
+  "val_by_language": {
+    "ar": 0.9805,
+    "en": 1.0
+  },
+  "clitic_val": {
+    "و": {
+      "pass_rate": 0.9825,
+      "n": 686
+    },
+    "ب": {
+      "pass_rate": 0.9082,
+      "n": 686
+    },
+    "ل": {
+      "pass_rate": 0.895,
+      "n": 686
+    },
+    "ف": {
+      "pass_rate": 0.8907,
+      "n": 686
+    },
+    "وب": {
+      "pass_rate": 0.9009,
+      "n": 686
+    },
+    "ول": {
+      "pass_rate": 0.8455,
+      "n": 686
+    },
+    "فب": {
+      "pass_rate": 0.7915,
+      "n": 686
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.49047413860248135,
+      "seconds": 29.1,
+      "score": 0.9569282136894826,
+      "val_entity_f1": 0.9569282136894826
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.14334130479721352,
+      "seconds": 28.9,
+      "score": 0.9290411907234337,
+      "val_entity_f1": 0.9290411907234337
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.007772089282682698,
+      "seconds": 29.1,
+      "score": 0.9901861252115058,
+      "val_entity_f1": 0.9901861252115058
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.004656435636986446,
+      "seconds": 29.1,
+      "score": 0.9657237936772046,
+      "val_entity_f1": 0.9657237936772046
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.03201419367296954,
+      "seconds": 29.0,
+      "score": 0.9610037300779926,
+      "val_entity_f1": 0.9610037300779926
+    }
+  ],
+  "best_epoch": 3,
+  "n_train": 2790,
+  "n_val": 612,
+  "tokens_join_equals_text_share": 1.0
+}

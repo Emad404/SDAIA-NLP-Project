@@ -1,0 +1,105 @@
+{
+  "name": "ner_xlmr_clitic_aug",
+  "checkpoint": "xlm-roberta-base",
+  "labels": [
+    "O",
+    "B-LOCATION",
+    "B-PERSON",
+    "B-SERVICE",
+    "I-LOCATION",
+    "I-PERSON",
+    "I-SERVICE"
+  ],
+  "preproc_version": "1.0.0",
+  "val_entity_f1": 1.0,
+  "val_per_type": {
+    "LOCATION": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 516.0
+    },
+    "PERSON": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 436.0
+    },
+    "SERVICE": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 511.0
+    }
+  },
+  "val_by_language": {
+    "ar": 1.0,
+    "en": 1.0
+  },
+  "clitic_val": {
+    "و": {
+      "pass_rate": 1.0,
+      "n": 686
+    },
+    "ب": {
+      "pass_rate": 1.0,
+      "n": 686
+    },
+    "ل": {
+      "pass_rate": 1.0,
+      "n": 686
+    },
+    "ف": {
+      "pass_rate": 1.0,
+      "n": 686
+    },
+    "وب": {
+      "pass_rate": 0.9985,
+      "n": 686
+    },
+    "ول": {
+      "pass_rate": 1.0,
+      "n": 686
+    },
+    "فب": {
+      "pass_rate": 0.9985,
+      "n": 686
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.4320707064739469,
+      "seconds": 38.1,
+      "score": 0.9624619546838011,
+      "val_entity_f1": 0.9624619546838011
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.008757039595461126,
+      "seconds": 37.6,
+      "score": 1.0,
+      "val_entity_f1": 1.0
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.005320549976971486,
+      "seconds": 38.5,
+      "score": 1.0,
+      "val_entity_f1": 1.0
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.0022376571530121907,
+      "seconds": 38.2,
+      "score": 0.988179669030733,
+      "val_entity_f1": 0.988179669030733
+    }
+  ],
+  "best_epoch": 2,
+  "n_train": 2790,
+  "n_val": 612,
+  "tokens_join_equals_text_share": 1.0,
+  "clitic_aug": 0.35,
+  "n_train_items": 3673
+}

@@ -1,0 +1,115 @@
+{
+  "name": "topic_xlmr_l4_kd",
+  "task": "topic",
+  "checkpoint": "xlm-roberta-base",
+  "lang": "all",
+  "profile": "xlmr",
+  "labels": [
+    "account_access",
+    "appointments",
+    "billing",
+    "digital_services",
+    "outage",
+    "permits",
+    "transport",
+    "waste"
+  ],
+  "preproc_version": "1.0.0",
+  "seed": 42,
+  "epochs_run": 4,
+  "best_epoch": 2,
+  "lr": 3e-05,
+  "bs": 32,
+  "max_len_train": 96,
+  "max_len_infer": 128,
+  "case_aug": 0.35,
+  "n_train": 10821,
+  "n_val": 1634,
+  "val_macro_f1": 0.8754,
+  "val_ci": [
+    0.8593,
+    0.8907
+  ],
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 1.614,
+      "seconds": 59.5,
+      "val_macro_f1": 0.8436,
+      "agreement_with_teacher": 0.9204
+    },
+    {
+      "epoch": 2,
+      "loss": 0.0758,
+      "seconds": 59.1,
+      "val_macro_f1": 0.8643,
+      "agreement_with_teacher": 0.9529
+    },
+    {
+      "epoch": 3,
+      "loss": 0.0592,
+      "seconds": 59.0,
+      "val_macro_f1": 0.8538,
+      "agreement_with_teacher": 0.9449
+    },
+    {
+      "epoch": 4,
+      "loss": 0.0507,
+      "seconds": 59.1,
+      "val_macro_f1": 0.8664,
+      "agreement_with_teacher": 0.9578
+    },
+    {
+      "epoch": 5,
+      "loss": 0.0465,
+      "seconds": 59.4,
+      "val_macro_f1": 0.8683,
+      "agreement_with_teacher": 0.9382
+    },
+    {
+      "epoch": 6,
+      "loss": 0.0449,
+      "seconds": 59.2,
+      "val_macro_f1": 0.8754,
+      "agreement_with_teacher": 0.9755
+    },
+    {
+      "epoch": 7,
+      "loss": 0.0407,
+      "seconds": 59.2,
+      "val_macro_f1": 0.8721,
+      "agreement_with_teacher": 0.9547
+    },
+    {
+      "epoch": 8,
+      "loss": 0.0389,
+      "seconds": 59.2,
+      "val_macro_f1": 0.8753,
+      "agreement_with_teacher": 0.9682
+    },
+    {
+      "epoch": 9,
+      "loss": 0.0368,
+      "seconds": 59.1,
+      "val_macro_f1": 0.874,
+      "agreement_with_teacher": 0.9633
+    }
+  ],
+  "distilled_from": "topic_xlmr_all_ca",
+  "kept_teacher_layers": [
+    2,
+    5,
+    8,
+    11
+  ],
+  "n_params_M": 221.3,
+  "kd": {
+    "alpha": 0.3,
+    "temperature": 2.0,
+    "lr": 0.0001,
+    "epochs_run": 9,
+    "best_epoch": 6,
+    "transfer_set": "bayan_cases descriptions (soft labels only)"
+  },
+  "teacher_val_macro_f1": 0.8817
+}

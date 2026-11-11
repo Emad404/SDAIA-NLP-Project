@@ -1,0 +1,210 @@
+feedback_id,language,dialect_region,y_true,pred,conf,text
+BF01950,en,English,appointments,account_access,0.990635,"Honestly, I opened the link from the email and it says it has expired. This is not acceptable. !!!"
+BF08392,en,English,appointments,account_access,0.9901833,Follow-up: I forgot my password and the reset link does not work 😤
+BF04450,ar,Gulf,digital_services,account_access,0.98949826,خبر جيد: لا أحد يوضح ليش أوقف وصولي يوم الاثنين. أقدر سرعة المساعدة! 🙏
+BF03480,en,English,transport,waste,0.9894574,Question: Stray cats are tearing open the rubbish because the bin is full. And the licence expires next month and nothing is moving
+BF03825,ar,Levantine,transport,waste,0.98924834,غير مقبول: يعني رائحة الحاوية كريهة كتير صراحة 😤
+BF08541,en,English,transport,waste,0.988884,"Honestly, The trash was not collected this morning. Also, I cannot log in to my account. This is not acceptable. 😤"
+BF06601,ar,Gulf,transport,waste,0.9883986,بصراحة، الأكياس متراكمة عند الزاوية من السبت. هذه المرة الثالثة التي أبلغ فيها. 😡
+BF08811,ar,MSA,appointments,account_access,0.9881324,خبر جيد: ما زلت أنتظر الرد الموضوع يخص الرمز. أقدر سرعة المساعدة! !!
+BF01407,ar,MSA,transport,waste,0.9875557,محبط فعلا. الحاويات ممتلئة قرب الحديقة، وأيضا تم إغلاق حسابي بعد عدة محاولات !!!
+BF09475,ar,Gulf,outage,digital_services,0.98704565,للتوثيق، بعد التحديث الأخير ما تستجيب الأزرار، وأيضا محطة الباص مزدحمة للغاية ما يصير كذا. شكرا مقدما. 🙂
+BF10910,ar,MSA,account_access,digital_services,0.98633087,الصفحة تتجمد في الخطوة الأخيرة 😞
+BF11390,ar,Gulf,billing,digital_services,0.9862759,بصراحة، أعبئ البيانات مرتين ويعيدني النظام إلى الصفحة الأولى، بالإضافة إلى ذلك، المجموع في الكشف لا يطابق ما ذكره الموظف وربي 😡
+BF06225,en,English,outage,digital_services,0.98607045,"For the record, The app crashes every time I open it 🙂"
+BF11697,en,English,billing,permits,0.9849806,"Good news: I need to renew my commercial licence. All good now, thanks. 😊 email me at khalid.dosari25@example.org...."
+BF08100,en,English,billing,permits,0.9848556,Really frustrated. The licence expires next month and nothing is moving. Please fix this. 😡!!
+BF11453,en,English,billing,digital_services,0.98454005,Really frustrated. The portal shows an fault when I submit the form 😞
+BF08716,en,English,appointments,permits,0.98420596,Unacceptable: They asked for the same deed copy three times. This is not acceptable. 😤
+BF11118,ar,Gulf,billing,digital_services,0.9840365,مرة أخرى، تظهر شاشة بيضاء بعد الضغط على إرسال. أرجو إصلاح هذا. !!! رقم هويتي 1174736879
+BF09105,ar,Levantine,outage,digital_services,0.9838935,ملاحظة سريعة: يعُني يظهر رمز الخطأ E-1109 على الشاشة. أخبِروني. 🙂
+BF02659,ar,MSA,billing,permits,0.9833196,أريد تجديد رخصتي التجارية ؟؟؟
+BF07216,ar,MSA,account_access,digital_services,0.9833097,أعبئ البيانات مرتين ويعيدني النظام إلى الصفحة الأولى ؟؟؟
+BF00261,ar,MSA,billing,permits,0.98269534,مرة أخرى؟ أريد تجديد رخصتي التجارية. أرجو إصلاح هذا. ؟؟؟
+BF10283,ar,Egyptian,appointments,permits,0.9823497,تحديث: يا جماعة رُفض التصريح دون ذكر السبب. كل شيء تمام الآن، شكرا. !
+BF07699,ar,MSA,account_access,digital_services,0.9816783,خبر جيد: تظهر رسالة خطأ في البوابة عند إرسال النموذج. شكرا، تم حل الموضوع. 🙏
+BF08995,en,English,outage,digital_services,0.9816109,"fyi,  i get a blank screen after tapping submit. let me know!!!"
+BF09783,en,English,appointments,transport,0.9814146,The metro train was delayed again. This is not acceptable. 😤 https://portal.example.test/track?id=75416
+BF08006,ar,Gulf,waste,transport,0.9792072,والله خصمت قيمة الرحلة من بطاقتي ولم تفتح البوابة ما يصير كذا. كل شيء تمام الآن، شكرا. 😊
+BF04102,ar,Gulf,appointments,transport,0.97871506,مرة أخرى؟ معلومات المسار خاطئة في التطبيق وربي 😡
+BF10296,en,English,waste,outage,0.97634435,"I was sent from one department to another It is about the service. All good now, thanks. 🙏"
+BF11081,en,English,permits,appointments,0.97500956,Unacceptable: Thereee are no available appointments this week. And power went out again in Al Shati !!!
+BF04837,ar,Gulf,digital_services,billing,0.9745374,مرة أخرى؟ تم خصم 50 ريال مرتين من فاتورتي، و رُفض الإذن دون ذكر السبب ؟؟؟ رقم هويتي 1441585417
+BF01514,en,English,account_access,appointments,0.97347236," Update: My slot disappeared the night before. And they asked for the same deed copy three times. All good now, thanks. 🙏.... "
+BF06819,ar,MSA,permits,billing,0.97314125,كان التأمين المسترد مستحقا في أبريل الماضي وما زلت أنتظر. شكرا مقدما.
+BF05780,en,English,digital_services,billing,0.972864,My deposit was due back last May and I am still waiting. Appreciate the quick help! 🙏 my ID 2816279406
+BF07453,en,English,permits,appointments,0.9727983,Quick note: Still waiting for a reply It is about the slot. Let me know. 🙂 my number 0592304430
+BF04805,ar,Egyptian,digital_services,billing,0.97240025,بصراحة، ليه ارــتفعت فاتورة شهر مايو أوي؟ أرجو إصلاح هذا. 😤
+BF09150,ar,Gulf,transport,appointments,0.97218996,للتوثيق،  يا جماعة لم يتغير شيء من رسالتي الأخيرة الموضوع يخص الانتظار. شكرا مقدما!!
+BF09124,ar,Gulf,transport,appointments,0.9717467,للعلم، والله لم يتغير شيء من رسالتي الأخيرة الموضوع يخص الانتظار. 🙂
+BF04065,en,English,permits,billing,0.97148335,"Why did the January invoice go up so much? Thank you, it was sorted out. 😊"
+BF07321,ar,Gulf,digital_services,billing,0.97049683,سؤال: المجموع في الكشف لا يطابق ما ذكره الموظف وربي 🙂
+BF11337,ar,Gulf,permits,billing,0.9701334, للعلم، أحتاج توضيح الرسوم الإضافية في الفاتورة، بالإضافة إلى ذلك، أبغى تجديد رخصتي التجارية وربي. أخبروني. 🙂 
+BF04444,ar,Gulf,waste,outage,0.96410364,غير مقبول: أظلم الشارع بعد العاصفة وربي. أرجو إصلاح هذا. ؟؟؟
+BF07013,en,English,outage,waste,0.9613871,"Again, Please look into my case It is about the cleaning. 😞"
+BF02133,ar,Gulf,billing,account_access,0.9457794,ملاحظة سريعة: الرد الذي وصلني لم يكننن مفيدا الموضوع يخص الحساب. شكرا مقدما.
+BF03224,ar,Gulf,billing,account_access,0.94552904,تذكير: والله الرد الذي وصلني لم يكن مفيدا الموضوع يخص الحساب. ما يصير كذا. كل شيء تــمام الآن، شكرا. !
+BF09286,ar,Gulf,digital_services,outage,0.94058,مرة أخرى، أرجو تصعيد هذا إلى المدير الموضوع يخص الخدمة. وربي 🙂
+BF02134,ar,Gulf,transport,billing,0.93074507,غيرُ مِقبولِ: خصمت قيمة الرِحلة مُن بطِاُقتي ولم تفتح الُبَوابة ما يصير كذا ؟؟؟
+BF02353,ar,Gulf,billing,account_access,0.9305076,محبط فعلا. ياخي الرد الذي وصلني لم يكن مفيدا الموضوع يخص الحساب. هذه المرة الثالثة التي أبلغ فيها. 😞
+BF10905,ar,MSA,appointments,permits,0.9032949,تذكير: لم يتغير شيء منذ رسالتي الأخيرة الموضوع يخص الرسوم. أخبروني.
+BF11365,ar,Gulf,billing,account_access,0.87996846,بّصراحة، يا جماعَة خرج المبلُغ من حسابَي يوم الُجمعةّ لكن النظاِم يظهره غير مّسدِد، و أعبئ البيانات مرتين ويعيدني النّظام إُلى الصفحَة الأولى. هذه اَلمرُة الِثالثة التي أبلغ فيهاَ. ؟؟؟
+BF05369,ar,Gulf,digital_services,permits,0.8568144,للعلممم، يا جماعة أحتاج مساعدة بخصوص طلبي الموضوع يخص الرسوم. أخبروني.
+BF01584,ar,Gulf,digital_services,appointments,0.70028114,مرة أخرى؟ لست راضيا عن الخدمة الموضوع يخص التطبيق. وربي 😤
+BF11937,ar,Levantine,account_access,appointments,0.6945124,للعلم، الرد الذي وصلني لم يكن مفيدا الموضوع يخص التطبيق. صراحة. أرجو الإفادة.
+BF06355,ar,MSA,digital_services,appointments,0.661273,خبر جيد: أحتاج مساعدة بخصوص طلبي الموضوع يخص التطبيق. شكرا، تم حل الموضوع. !!!
+BF02055,ar,Gulf,billing,permits,0.65945345,مرة  أخرى، يا جماعة خرج الَماَل من حَسابي يومّ الجمُعة لكن النظام يظهره غير مسدد ما يصير كذا !!!
+BF00614,ar,Gulf,billing,permits,0.53534156,ياِخي ما وصلنُي اِلمبِلغ الَمسترَد 150 رَيالّ بعد مرور 4 أُيام اُلله يعافيِكم. هذه الّمرة الثالثة اَلتي أَبلغ فيها. 😞 جّوالي 0588132440
+BF10879,en,English,digital_services,appointments,0.50262916,Follow-up: Nobody has contacted me about my request. This is not acceptable. 😡
+BF05029,en,English,permits,appointments,0.4742788,Reminder: Nobody has contacted me about my request. Reporting this for the third time. 😤 call me on 057 605 6198
+BF10880,en,English,digital_services,appointments,0.4644132,Reminder: Nobody has contacted me about my request 😞!!!
+BF04015,en,English,permits,appointments,0.45508066,Quick note: Nobody has contacted me about my request. Let me know. my ID 1103964026
+BF09951,en,English,permits,appointments,0.45174465,"Update: Nobody has contacted me about my request. Resolved now, thank you. 🙏"
+BF01926,en,English,transport,appointments,0.4476979,"Honestlyyyy, Nobody has contacted me about my request !!!"
+BF05717,en,English,transport,appointments,0.44754243,"Honestly, Nobody has contacted me about my request 😤"
+BF10878,en,English,digital_services,appointments,0.4466132,"FYI, Nobody has contacted me about my request. Let me know. 🙂???"
+BF09952,en,English,permits,appointments,0.44499448,Quick note: Nobody has contacted me about my request. Let me know.
+BF09950,en,English,permits,appointments,0.43461853,"FYI, Nobody has contacted me about my request. Please advise."
+BF07686,en,English,permits,appointments,0.4210903,Nobody has contacted me about my request. Appreciate the quick help! !
+BF01361,ar,Gulf,transport,appointments,0.34320602,سؤال: من فضلكم تصعيد هذا إلى المدير 🙂
+BF09242,en,English,account_access,appointments,0.3311178,Please escalate this to a manager
+BF05607,en,English,appointments,billing,0.2916374,"Honestly, Please look into my case. Reporting this for the third time. 😤"
+BF10223,en,English,digital_services,billing,0.28722104,"Honestly, Please look into my case 😤"
+BF08042,en,English,transport,billing,0.2868197,Please look into my case 😤
+BF09755,en,English,outage,appointments,0.27148283,Unacceptable: I am not happy with the service 😞
+BF03170,ar,Levantine,digital_services,appointments,0.26537532,تذكير: لست راضيا عن الخدمة رقم هويتي 1566923391
+BF02430,ar,MSA,digital_services,appointments,0.25296316,أرجو تصعيد هذا إلى المدير ؟؟؟
+BF07794,en,English,outage,appointments,0.251074,I am not happy with the service 😡 my ID 2023075069
+BF05076,en,English,digital_services,billing,0.24105577,Again? Please look into my case. Please fix this. 😞....
+BF11722,ar,MSA,transport,appointments,0.23232757,للتوثيق، من فضلكم تصعيد هذا إلى المدير. أخبروني.
+BF07179,ar,MSA,account_access,appointments,0.224715,أرجو تصعيد هذا إلى المدير. كل شيء تمام الآن، شكرا. 😊
+BF11335,ar,Gulf,billing,appointments,0.22100358,مرة أخرى، يا جماـعة من فضلكم تصعيد هذا إلى المدير وربي. أرجو إصلاح هذا. ؟؟؟
+BF06695,en,English,outage,appointments,0.21785007,"For  the record, I am not happy with the service"
+BF11334,ar,Gulf,billing,appointments,0.21590076,بصراحة، أرجو تصعيد هذا إلى المدير. هذا غير مقبول. 😤
+BF04209,ar,Egyptian,transport,appointments,0.21159834,تحديث: بقى لم يتصل بي أحد بخصوص طلبي بقى. شكرا، تم حل الموضوع. 😊
+BF08840,ar,MSA,outage,appointments,0.2083276,لم يتصل بي أحد بخصوص طلبي. أرجو الإفادة. رقمي 0573497847
+BF09178,ar,Gulf,billing,appointments,0.20805672,محبط فعلا. لم يتصل بي أحد بخصوص طلبي ؟؟???
+BF11336,ar,Gulf,billing,appointments,0.20509961,أرجو تصعيد هذا إلى المدير. تم الحل، شكرا لكم. 🙏
+BF10884,en,English,billing,appointments,0.20492479,I am not happy with the service 😤
+BF10062,en,English,account_access,appointments,0.20347443,Follow-up: Please escalate this to a manager 😡
+BF01092,en,English,appointments,outage,0.19918418,Someone should take responsibility for this
+BF02754,ar,Egyptian,transport,appointments,0.19820252,سؤال: لم يتصل بي أحد بخصوص طلبي بقى. أرجو الإفادة. جوالي 0558021188???
+BF11828,ar,Gulf,billing,appointments,0.19375828,تذكير:  ياخي لست راضيا عن الخدمة الله يعافيكم !!!
+BF09923,ar,MSA,outage,appointments,0.19288424,متابعة: لم يتصل بي أحد بخصوص طلبي. أرجو إصلاح هذا. 😞
+BF09198,en,English,permits,appointments,0.19013746,"FYI, Please escalate this to a manager. Let me know."
+BF01468,en,English,digital_services,appointments,0.1895984,"Please escalate this to a manager. Thank you, it was sorted out. !"
+BF02616,ar,Levantine,transport,appointments,0.1885672,والله  لست راضيا عن الخدمة. هذه المرة الثالثة التي أبلغ فيها. 😞
+BF08124,en,English,permits,billing,0.18830647,"For the record, This is the third time I am writing about this"
+BF04158,ar,MSA,waste,appointments,0.18801254,محبط فعلا. لم يتصل بي أحد بخصوص طلبي. أرجو إصلاح هذا. !!!
+BF08571,en,English,waste,billing,0.18572275,Question: Why does this take so long?
+BF02340,ar,Levantine,digital_services,appointments,0.18404798,للتوثيق، والله لستتت راضـيا عن الخدمة. أرجو الإفادة. 🙂
+BF11462,ar,MSA,account_access,appointments,0.18325101,تحديث: هذه المرة الثالثة التي أكتب فيها عن هذا. أقدر سرعة المساعدة! !
+BF08866,ar,MSA,account_access,appointments,0.18316078,للعلم، لم يتغير شيء منذ رسالتي الأــخيرة 🙂
+BF11140,en,English,digital_services,billing,0.18252689,Quick note: Nothing has changed since my last message. Please advise.
+BF04561,en,English,digital_services,billing,0.17837675,AGAIN?  WHY DOES THIS TAKE SO LONG? THIS IS NOT ACCEPTABLE. 😡
+BF06826,en,English,account_access,appointments,0.17624006,Really frustrated. Please escalate this to a manager !!!
+BF02540,ar,Gulf,account_access,appointments,0.17558247,خبر جيد: لم يتصل بي أحد بخصوص طلبي الله يعافيكم. أقدر سرعة المساعدة! 😊
+BF11827,ar,Gulf,billing,appointments,0.17478038,غير  مقبول: لست راضيا عن الخدمة. هذا غير مقبول. 😞....
+BF02987,ar,Gulf,digital_services,appointments,0.17473938,والله  ليش يستغرق هذا وقتاا طويلا؟ أرجو إصلاح هذا. !!! رقمي 0556688887
+BF03508,en,English,permits,appointments,0.17461999,"Honestly, I need help with my request 😞"
+BF06122,en,English,waste,billing,0.17371319,"Honestly, Why does this take so long? 😞"
+BF08234,en,English,account_access,appointments,0.17366953,Follow-up: I need helpp with my request. Reporting this for the third time. 😤
+BF06009,ar,Egyptian,billing,appointments,0.1732973,لست راضيا عن الخدمة. تم الحل، شكرا لكم. 👍
+BF02769,en,English,waste,appointments,0.1723944,This is the third time I am writing about this. This is not acceptable. 😡
+BF07550,ar,MSA,billing,appointments,0.17141877,خبر جيد: لم يتغير شيء منذ رسالتي الأخيرة. تم الحل، شكرا لكم. 🙏!!!
+BF05782,ar,Gulf,account_access,outage,0.17073321,يجب أن يتحمل أحد المسؤولية ما يصير كذا 😞
+BF05848,ar,Gulf,account_access,appointments,0.17060213,محبط فعلا. لست راضيا عن الخدمة ما يصير كذا. أرجو إصلاح هذا. 😤
+BF05860,en,English,permits,appointments,0.17058006,"For the record, I need help with my request"
+BF02859,ar,Egyptian,digital_services,appointments,0.16993275,أحتاج  مساعدة بخصوص طلبي. تم الحل، شكرا لكم. 👍 بريدي maha99@mail.example.sa
+BF11696,en,English,waste,appointments,0.16985212, This is the third time I am writing about this. Please advise. 
+BF01201,ar,Gulf,waste,appointments,0.16968493,تحديث: أحتاج مساعدة بخصوص طلبي. أقدر سرعة المساعدة! 👍
+BF06779,en,English,permits,appointments,0.16963744,"FYI, I need help with my request. Please advise. 🙂"
+BF04517,ar,Gulf,digital_services,billing,0.16960254,للتوثيق، والله ليش يستغرق هذا وقتا طويلا؟ الله يعافيكم 🙂....
+BF10895,en,English,permits,appointments,0.16941637,Again? I need help with my request. This is not acceptable. !!! my ID 2852058953
+BF03974,ar,MSA,waste,appointments,0.16938283,للتوثيق، لم يتغير شيء منذ رسالتي الأخيرة. أرجو الإفادة.
+BF09442,en,English,waste,appointments,0.1692064,"I need help with my request. Resolved now, thank you. !"
+BF04944,ar,Gulf,waste,appointments,0.169071,تحديث: والله هذه المرة الثالثة التي أكتب فيها عن هذا ما يصير كذا. أقدر سرعة المساعدة! 👍
+BF08259,ar,Egyptian,digital_services,appointments,0.1689981,تحديث: أحتاج مساعدة بخصوص طلبي ده مش معقول. شكرا، تم حل الموضوع. !
+BF08663,ar,Gulf,transport,appointments,0.16892122,بصراحة، يا جماعة ليش يستغرق هذا وقتا طويلا؟ أرجو إصلاح هذا. 😤
+BF04702,en,English,account_access,appointments,0.16853656,Unacceptable: I need help with my request. Reporting this for the third time. 😞
+BF07143,en,English,account_access,appointments,0.16816999,"Again, I need help with my request. Reporting this for the third time. 😞 call me on 0526498738"
+BF01723,ar,Gulf,digital_services,appointments,0.16815495,خبر جيد: لم يتغير شيء من رسالتي الأخيرة. تم الحل، شكرا لكم. 🙏???
+BF03520,ar,MSA,outage,appointments,0.16802827,لم يتغير شيء منذ رسالتي الأخيرة. هذا غير مقبول. 😡
+BF07722,ar,Levantine,permits,appointments,0.16795462,بصراحة، لم يتغير شيء من رسالتي الأخيرة 😡
+BF06853,en,English,billing,appointments,0.1677611," i need help with my request. all good now, thanks. ! "
+BF02858,ar,Gulf,digital_services,appointments,0.16770375,أحتاج مساعدة بــخصوص طلبي. تم الحل، شكرا لكم. !
+BF02638,en,English,transport,appointments,0.16764681,Reminder: The answer I received was not helpful 😤
+BF02924,en,English,transport,appointments,0.16742365,question: this is the third time i am wriitng about this. please advise.
+BF10368,ar,Levantine,account_access,appointments,0.16739963,أحتاج مساعدة بخصوص طلبي صراحة. تم الحل، شكرا لكم. !
+BF11444,en,English,permits,appointments,0.16725042,Question: The answer I received was not helpful. Thanks in advance. 🙂
+BF05679,en,English,digital_services,billing,0.1672393,Reminder: Why does this take so long? This is not acceptable. !!!!!
+BF03241,ar,Gulf,digital_services,appointments,0.16717978,خبر جيد: ياخي أحتاج مساعدة بخصوص طلـــبي ما يصير كذا. شكرا، تم حل الموضوع. 🙏
+BF06407,ar,Levantine,permits,appointments,0.16716437,والله لم يتغير شيء من رسالتي الأخيرة 😡
+BF10568,ar,Levantine,account_access,appointments,0.16683765,خبر جيد: أحتاج مساعدة بخصوص طلبي يا ريت تتصرفوا. أقدر سرعة المساعدة! !
+BF06238,en,English,account_access,appointments,0.16649891,I need help with my request. Please fix this. !!!
+BF02462,en,English,billing,appointments,0.16635339,The answer I received was not helpful. Thanks in advance. 🙂
+BF09745,ar,Levantine,transport,appointments,0.16584997,خبر  جيد: يعني لم يتغير شيء من رسالتي الأخيرة. شكرا، تم حل الموضوع. !
+BF09079,en,English,permits,appointments,0.16583167,Reminder: The answer I received was not helpful. Please fix this. 😡
+BF03366,ar,Gulf,billing,appointments,0.16573346,تحديث: يا جماعة تم تحويلي من قسم إلى آخر. أقدر سرعة المساعدة! 🙏
+BF04099,ar,Levantine,account_access,appointments,0.16570325,الرد الذي وصلني لمَ يُكَن مفيدا 😤
+BF11559,en,English,digital_services,appointments,0.16548753,Question: The answer I received was not helpful. Let me know.
+BF00726,en,English,digital_services,appointments,0.16517615,"Update: The answer I received was not helpful. Resolved now, thank you. 🙏"
+BF08228,en,English,permits,appointments,0.16504085,"The answer I received was not helpful. Resolved now, thank you. 🙏"
+BF01271,ar,MSA,outage,appointments,0.16502655,متابعة: ما زلت أنتظر الرد 😡
+BF08286,en,English,outage,billing,0.16492069,"Good news: Why does this take so long? All good nnnow, thanks. 😊"
+BF02606,en,English,appointments,billing,0.16487125,Again? Why does this take so long? Reporting this for the third time. 😡
+BF09464,en,English,permits,appointments,0.16485284,"Update: The answer I received was not helpful. Thank you, it was sorted out. 🙏"
+BF01871,en,English,transport,appointments,0.16455969,"Good news: The answer I received was not helpful. All good now, thanks. 😊"
+BF04370,ar,MSA,billing,appointments,0.16446087,أرجو  النظر في حالتي. أقدر سرعة المساعدة! 😊
+BF01622,ar,MSA,digital_services,appointments,0.1643137,متابعة: لماذا يستغرق هذا وقتا طويلا؟ أرجو إصلاح هذا. 😤
+BF02574,en,English,appointments,billing,0.16370346,Why does this take so long? This is not acceptable. 😤
+BF03015,en,English,digital_services,billing,0.16370049,"Again, Why does this take so long? Resolved now, thank you. !"
+BF08796,ar,Gulf,transport,billing,0.16352494,للتوثيق، ليش يستغرق هذا وقتا طويلا؟ شكرا مقدما. 🙂 رقمي 050-255-0684!!!
+BF00315,ar,Egyptian,transport,appointments,0.16349086,تتتحديث: يا جماعة تم تحويلي من قسم إلى آخر من فضلكم. أقدر سرعة المساعدة! 👍
+BF00641,ar,MSA,outage,appointments,0.16348062,للعلم، ما زلت أنتظر الرد
+BF03578,ar,MSA,billing,appointments,0.16302505,خبر جيد: لماذا يستغرق هذا وقتا طويلا؟ تم الحل، شكرا لكم. 🙏 رقمي 0525157222
+BF01143,ar,MSA,digital_services,billing,0.16209665,تحديث: لماذا يستغرق هذا وقتا طويلا؟ كل شيء تمام الآن، شكرا. !
+BF11725,ar,MSA,billing,appointments,0.16186929,تحديث: أرجو النظر في ححالتي. شكرا، تم حل الموضوع. 👍
+BF11388,ar,Gulf,billing,appointments,0.16182303,خبر جيد: يا جماعة يجب أن يتحمل أحد المسؤولية. أقدر سرعة المساعدة! 👍 تواصلوا معي على 058-227-1262
+BF05153,ar,Levantine,account_access,appointments,0.1617744,للتوثيق، الرد الذي وصلني لم يكن مفيدا
+BF09338,ar,MSA,outage,appointments,0.16176607,ما زلت أنتـظر الرد. هذا غير مقبول. 😞
+BF02006,ar,Egyptian,billing,appointments,0.16155393,بصراحة،  لسه أنتظر الرد ده مش معقول. أرجو إصلاح هذا. !!!
+BF10405,ar,Levantine,waste,appointments,0.16107301, للتوثيق، لسا أنتظر الرد يا ريت تتصرفوا 
+BF02021,ar,Levantine,billing,appointments,0.16087839,الرد الذي وصلني لم يكن مفيدا. أخبروني. جوالي 0513576559
+BF01016,ar,Egyptian,permits,appointments,0.16050756,يا جماعة الرد الذي وصلني لم يكن مفيدا !!!
+BF06334,ar,MSA,digital_services,appointments,0.16011317,ملاحظة سريعة: تم تحويلي من قسم إلى آخر. شكرا مقدما. 🙂
+BF02972,ar,Gulf,permits,appointments,0.1599243,تحديث: يا جماعة الرد الذي وصلني لم يكن مفيدا. أقدر سرعة المساعدة! !
+BF01287,ar,MSA,permits,appointments,0.15915121,تم تحويلي من قسم إلى آخر. هذه المرةةةة الثالثة التي أبلغ فيها. 😤
+BF09011,ar,Gulf,transport,appointments,0.15902492,ملاحظة سريعة: الرد الذي وصلني لم يكن مفيدا ما يصير كذا. أرجو الإفادة. 🙂
+BF02028,en,English,account_access,appointments,0.1589315,Again? Why does this take so long? Please fix this. 😡
+BF02422,en,English,digital_services,appointments,0.15888107,Really frustrated. Why does this take so long? Please fix this. 😤
+BF10912,ar,MSA,waste,billing,0.15863656,محبط فعلا. لماذا يستغرق هذا وقتا طويلا؟ هذه المرة الثالثة التي أبلغ فيها. 😞
+BF11700,en,English,waste,appointments,0.15846105,"FYI,  Still waiting for a reply"
+BF09796,ar,Gulf,billing,appointments,0.15801337,ملاحظة سريعة: يا جماعة من فضلكم النظر في حالتي 🙂
+BF00365,en,English,outage,appointments,0.1579007,unacceptable: still waiting for a reply 😡
+BF05887,en,English,digital_services,appointments,0.15780473,Reminder: Why does this take so long? Please fix this. 😡
+BF03987,en,English,waste,billing,0.1577595,"honestly, still waiting for a reply. reporting this for the third time. 😡...."
+BF03762,ar,Gulf,permits,appointments,0.15763003,غير مقبول: الرد الذي وصلني لم يكن مفيدا. هذا غير مقبول. !!!
+BF10733,ar,Egyptian,permits,appointments,0.15739356,متابعة: يا جماعةّ يجب أن يتحمل أحَد الِمسؤولُية من فضلكم ؟؟؟
+BF10154,en,English,digital_services,appointments,0.1570041,Again? Still waiting for a reply. Please fix this. 😡
+BF04589,ar,Egyptian,billing,appointments,0.15680249,مرةةة  أخرى؟ يجب أن يتحمل أحد المسؤولية 😡
+BF09317,ar,Levantine,account_access,appointments,0.15679576,محبط فعلا. تم تحويلي من قسم إلى آخر صراحة !!!
+BF01174,en,English,permits,appointments,0.15665206,"Update: Still waiting for a reply. Resolved now, thank you. 😊"
+BF01056,en,English,outage,appointments,0.15653075,Follow-up: Still waiting for a reply. Please fix this. 😤
+BF10518,ar,Gulf,permits,appointments,0.15575565,بصراحة، من فضلكم النظر في حالتي ؟؟؟
+BF01898,ar,MSA,billing,appointments,0.15558977,مرة أخرى؟ تم تحويلي من قسم إلى آخر 😤
+BF02713,ar,Gulf,waste,appointments,0.15553273,للعلم، من فضلكم النظر في حالتي وربي 🙂???
+BF08422,en,English,transport,appointments,0.15413655,Again? I was sent from one department to another. Reporting this for the third time. !!!
+BF10517,ar,Gulf,permits,appointments,0.15410165,للعلم،  والله نرجو النظر في حالتي الله يعافيكم. أرجو الإفادة.
+BF10083,ar,Gulf,billing,appointments,0.15397018,للعلم، والله من فضلكم النظر في حالتي. شكرا مقدما.
+BF03935,en,English,account_access,appointments,0.15386389,"Honestly, I was sent from one department to another. Reporting this for the third time. 😤"
+BF00999,ar,Egyptian,transport,appointments,0.15378685,تم تحويلي من قسم إلى آخر ؟؟؟
+BF11525,en,English,transport,appointments,0.15355705,"Someone should take responsibility for this. Thank you, it was sorted out. 🙏"
+BF04191,ar,Levantine,account_access,appointments,0.15317795,بصراحة، يا أخي نرجو النظر في حالتي !!!
+BF06567,en,English,waste,appointments,0.15242207,Someone should take responsibility for this. This is not acceptable. 😡
+BF01647,en,English,digital_services,appointments,0.15241249,Again? Someone should take responsibility for this. This is not acceptable. !!! email me at maha68@example.org
+BF08158,en,English,billing,appointments,0.15234135,Someone should take responsibility for this !!! my number 059 165 5933
+BF01799,en,English,transport,appointments,0.15210703,"Update: Someone should take responsibility for this. All good now, thanks. 👍"
+BF09251,ar,Egyptian,permits,appointments,0.15122709,بقى يجب أن يتحمل أحد المسؤولية
+BF09049,en,English,permits,appointments,0.15069655,Someone should take responsibility for this. Reporting this for the third time. 😡
+BF07354,en,English,waste,billing,0.15048507,Follow-up: Someone should take responsibility for this !!!

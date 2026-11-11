@@ -1,0 +1,121 @@
+{
+  "name": "topic_xlmr_l3_kd",
+  "task": "topic",
+  "checkpoint": "xlm-roberta-base",
+  "lang": "all",
+  "profile": "xlmr",
+  "labels": [
+    "account_access",
+    "appointments",
+    "billing",
+    "digital_services",
+    "outage",
+    "permits",
+    "transport",
+    "waste"
+  ],
+  "preproc_version": "1.0.0",
+  "seed": 42,
+  "epochs_run": 4,
+  "best_epoch": 2,
+  "lr": 3e-05,
+  "bs": 32,
+  "max_len_train": 96,
+  "max_len_infer": 128,
+  "case_aug": 0.35,
+  "n_train": 10821,
+  "n_val": 1634,
+  "val_macro_f1": 0.8778,
+  "val_ci": [
+    0.8613,
+    0.8929
+  ],
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 1.3595,
+      "seconds": 54.4,
+      "val_macro_f1": 0.8414,
+      "agreement_with_teacher": 0.9186
+    },
+    {
+      "epoch": 2,
+      "loss": 0.0665,
+      "seconds": 54.3,
+      "val_macro_f1": 0.8545,
+      "agreement_with_teacher": 0.9492
+    },
+    {
+      "epoch": 3,
+      "loss": 0.0517,
+      "seconds": 54.2,
+      "val_macro_f1": 0.8623,
+      "agreement_with_teacher": 0.9131
+    },
+    {
+      "epoch": 4,
+      "loss": 0.0451,
+      "seconds": 54.3,
+      "val_macro_f1": 0.8761,
+      "agreement_with_teacher": 0.9351
+    },
+    {
+      "epoch": 5,
+      "loss": 0.0415,
+      "seconds": 54.4,
+      "val_macro_f1": 0.8728,
+      "agreement_with_teacher": 0.9394
+    },
+    {
+      "epoch": 6,
+      "loss": 0.0402,
+      "seconds": 54.3,
+      "val_macro_f1": 0.8774,
+      "agreement_with_teacher": 0.9663
+    },
+    {
+      "epoch": 7,
+      "loss": 0.0372,
+      "seconds": 54.4,
+      "val_macro_f1": 0.8778,
+      "agreement_with_teacher": 0.9657
+    },
+    {
+      "epoch": 8,
+      "loss": 0.0365,
+      "seconds": 54.3,
+      "val_macro_f1": 0.8702,
+      "agreement_with_teacher": 0.959
+    },
+    {
+      "epoch": 9,
+      "loss": 0.0352,
+      "seconds": 54.1,
+      "val_macro_f1": 0.8736,
+      "agreement_with_teacher": 0.9535
+    },
+    {
+      "epoch": 10,
+      "loss": 0.0349,
+      "seconds": 54.1,
+      "val_macro_f1": 0.8757,
+      "agreement_with_teacher": 0.959
+    }
+  ],
+  "distilled_from": "topic_xlmr_all_ca",
+  "kept_teacher_layers": [
+    3,
+    7,
+    11
+  ],
+  "n_params_M": 214.3,
+  "kd": {
+    "alpha": 0.3,
+    "temperature": 2.0,
+    "lr": 0.0001,
+    "epochs_run": 10,
+    "best_epoch": 7,
+    "transfer_set": "bayan_cases descriptions (soft labels only)"
+  },
+  "teacher_val_macro_f1": 0.8817
+}

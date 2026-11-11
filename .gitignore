@@ -1,0 +1,13 @@
+# heavy / generated artefacts are NOT committed (they are reproducible with `make reproduce`; shipped copies live on Google Drive)
+artifacts/
+models/
+*.safetensors
+*.onnx
+*.faiss
+*.npy
+*.joblib
+__pycache__/
+*.pyc
+.pytest_cache/
+final_run.lock
+.ipynb_checkpoints/

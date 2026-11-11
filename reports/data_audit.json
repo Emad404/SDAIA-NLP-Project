@@ -1,0 +1,53 @@
+{
+  "preproc_version": "1.0.0",
+  "n_rows": 12000,
+  "split_sizes": {
+    "train": 7981,
+    "val": 1634,
+    "test": 2385
+  },
+  "test_sha256": "4fdb543f7c8c866958c9974b0a940806521bd4b53ad2828aa6b25f5866396e7c",
+  "language": {
+    "en": 6000,
+    "ar": 6000
+  },
+  "arabic_dialect_share_pct": {
+    "Gulf": 46.9,
+    "MSA": 28.0,
+    "Levantine": 13.2,
+    "Egyptian": 11.8
+  },
+  "topic_counts_trainval": {
+    "appointments": 1591,
+    "billing": 1439,
+    "waste": 1187,
+    "permits": 1138,
+    "outage": 1085,
+    "account_access": 1073,
+    "digital_services": 1055,
+    "transport": 1047
+  },
+  "sentiment_counts_trainval": {
+    "negative": 4182,
+    "neutral": 2933,
+    "positive": 2500
+  },
+  "words_per_message": {
+    "count": 9615.0,
+    "mean": 15.05,
+    "std": 5.62,
+    "min": 3.0,
+    "25%": 11.0,
+    "50%": 14.0,
+    "75%": 18.0,
+    "max": 39.0
+  },
+  "citizens": 3200,
+  "messages_changed_by_preproc_pct": 21.5,
+  "pii_placeholders_inserted": {
+    "<PHONE>": 704,
+    "<NATIONAL_ID>": 295,
+    "<EMAIL>": 242
+  },
+  "residual_long_digit_runs": 0
+}

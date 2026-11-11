@@ -1,0 +1,140 @@
+{
+ "model": "topic_xlmr_all_ca",
+ "n_val": 1634,
+ "n_errors": 209,
+ "val_accuracy": 0.8721,
+ "categories": {
+  "label_conflict": {
+   "description": "Label looks wrong (text clearly describes another topic, often the one the model predicted)",
+   "n": 25,
+   "share_of_errors": 0.12,
+   "median_conf": 0.983,
+   "by_language": {
+    "ar": 14,
+    "en": 11
+   },
+   "predicted_as": {
+    "digital_services": 8,
+    "permits": 5,
+    "billing": 4,
+    "account_access": 3
+   }
+  },
+  "hint_conflict": {
+   "description": "Message ends with an explicit topic hint ('It is about X' / 'الموضوع يخص X') that contradicts the label",
+   "n": 12,
+   "share_of_errors": 0.057,
+   "median_conf": 0.954,
+   "by_language": {
+    "ar": 9,
+    "en": 3
+   },
+   "predicted_as": {
+    "account_access": 4,
+    "appointments": 4,
+    "permits": 2,
+    "waste": 1
+   }
+  },
+  "compound": {
+   "description": "Two topics in one message (label = the first one; model picks the louder or the second)",
+   "n": 9,
+   "share_of_errors": 0.043,
+   "median_conf": 0.986,
+   "by_language": {
+    "ar": 6,
+    "en": 3
+   },
+   "predicted_as": {
+    "waste": 3,
+    "billing": 2,
+    "digital_services": 2,
+    "appointments": 1
+   }
+  },
+  "boundary": {
+   "description": "Genuinely ambiguous boundary between neighbouring topics (billing/transport, billing/digital_services, appointments/permits)",
+   "n": 4,
+   "share_of_errors": 0.019,
+   "median_conf": 0.975,
+   "by_language": {
+    "ar": 3,
+    "en": 1
+   },
+   "predicted_as": {
+    "billing": 2,
+    "transport": 1,
+    "permits": 1
+   }
+  },
+  "model_miss": {
+   "description": "Topical cue present but the model missed it (a real model error)",
+   "n": 4,
+   "share_of_errors": 0.019,
+   "median_conf": 0.66,
+   "by_language": {
+    "ar": 4
+   },
+   "predicted_as": {
+    "permits": 2,
+    "appointments": 2
+   }
+  },
+  "generic_no_topic_cue": {
+   "description": "Generic follow-up / complaint with NO topic words ('still waiting for a reply', 'please escalate'); the text alone cannot determine the topic",
+   "n": 155,
+   "share_of_errors": 0.742,
+   "median_conf": 0.168,
+   "by_language": {
+    "ar": 80,
+    "en": 75
+   },
+   "predicted_as": {
+    "appointments": 131,
+    "billing": 20,
+    "outage": 3,
+    "waste": 1
+   }
+  }
+ },
+ "generic_conf_gt_0.5": 3,
+ "errors_with_conf_lt_0.5": 152,
+ "share_errors_gulf": 0.249,
+ "share_val_gulf": 0.247,
+ "share_errors_arabic": 0.555,
+ "share_val_arabic": 0.544,
+ "selective_prediction": [
+  {
+   "min_conf": 0.0,
+   "coverage": 1.0,
+   "accuracy_on_answered": 0.8721,
+   "abstained": 0
+  },
+  {
+   "min_conf": 0.3,
+   "coverage": 0.897,
+   "accuracy_on_answered": 0.9529,
+   "abstained": 168
+  },
+  {
+   "min_conf": 0.4,
+   "coverage": 0.896,
+   "accuracy_on_answered": 0.9542,
+   "abstained": 170
+  },
+  {
+   "min_conf": 0.5,
+   "coverage": 0.888,
+   "accuracy_on_answered": 0.9607,
+   "abstained": 183
+  },
+  {
+   "min_conf": 0.7,
+   "coverage": 0.879,
+   "accuracy_on_answered": 0.9638,
+   "abstained": 197
+  }
+ ],
+ "share_errors_with_emoji": 0.584,
+ "share_val_with_emoji": 0.584
+}

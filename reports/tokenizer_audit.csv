@@ -1,0 +1,11 @@
+model,checkpoint,language,fertility,p95_len,max_len,vocab
+XLM-R,xlm-roberta-base,ar,1.721,42,79,250002
+XLM-R,xlm-roberta-base,en,1.395,42,56,250002
+mBERT,bert-base-multilingual-cased,ar,2.296,55,88,119547
+mBERT,bert-base-multilingual-cased,en,1.425,42,55,119547
+CAMeLBERT-mix,CAMeL-Lab/bert-base-arabic-camelbert-mix,ar,1.464,36,53,30000
+CAMeLBERT-mix,CAMeL-Lab/bert-base-arabic-camelbert-mix,en,2.535,72,101,30000
+CAMeLBERT-DA,CAMeL-Lab/bert-base-arabic-camelbert-da,ar,1.464,36,53,30000
+CAMeLBERT-DA,CAMeL-Lab/bert-base-arabic-camelbert-da,en,2.535,72,101,30000
+MiniLM-multilingual,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,ar,1.721,42,79,250002
+MiniLM-multilingual,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,en,1.395,42,56,250002

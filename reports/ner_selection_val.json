@@ -1,0 +1,15 @@
+{
+  "candidates": {
+    "ner_xlmr": {
+      "entity_f1": 0.9902,
+      "clitic_mean": 0.8877571428571429,
+      "clitic_min": 0.7915
+    },
+    "ner_xlmr_clitic_aug": {
+      "entity_f1": 1.0,
+      "clitic_mean": 0.9995714285714286,
+      "clitic_min": 0.9985
+    }
+  },
+  "chosen": "ner_xlmr_clitic_aug"
+}

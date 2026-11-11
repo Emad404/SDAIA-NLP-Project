@@ -1,0 +1,387 @@
+{
+  "run_at_utc": "2026-11-11 00:45:11 UTC",
+  "serving_config": {
+    "service_version": "1.0.0",
+    "preproc_version": "1.0.0",
+    "threads": 1,
+    "topic": {
+      "general": "topic_xlmr_l3_kd",
+      "dialect_aware": null,
+      "route_dialects": [],
+      "default_precision": "int8",
+      "accuracy_reference": "topic_xlmr_all_ca",
+      "quantisation_decision": "tax 0.02 pt (limit 1.0), speedup 1.43x (need 1.25x) -> default int8; fp32 kept as rollback (BAYAN_PRECISION=fp32)"
+    },
+    "sentiment": "sent_xlmr_all",
+    "ner": "ner_xlmr_clitic_aug",
+    "qa": "qa_xlmr_squad2_ft",
+    "search": true,
+    "max_wait_ms": 0,
+    "max_batch": 16,
+    "serving_notes": "general=3-layer KD student chosen for latency (teacher is the accuracy reference); 1 ORT thread, no batching wait; run server and clients on separate cores for the 16-user benchmark",
+    "aux_precision": {
+      "ner": "fp32",
+      "qa": "fp32",
+      "embedder": "fp32"
+    }
+  },
+  "shipped_topic_key": "topic_general_ort_int8",
+  "topic": {
+    "topic_tfidf_word": {
+      "macro_f1": 0.796,
+      "ci": [
+        0.7805,
+        0.8117
+      ],
+      "accuracy": 0.7979
+    },
+    "topic_tfidf_char": {
+      "macro_f1": 0.7947,
+      "ci": [
+        0.779,
+        0.811
+      ],
+      "accuracy": 0.7958
+    },
+    "topic_general_fp32_torch": {
+      "macro_f1": 0.8777,
+      "ci": [
+        0.8641,
+        0.8902
+      ],
+      "accuracy": 0.8725
+    },
+    "topic_general_ort_fp32": {
+      "macro_f1": 0.8777,
+      "ci": [
+        0.8641,
+        0.8902
+      ],
+      "accuracy": 0.8725
+    },
+    "topic_general_ort_int8": {
+      "macro_f1": 0.8768,
+      "ci": [
+        0.8634,
+        0.8897
+      ],
+      "accuracy": 0.8717
+    },
+    "topic_reference_teacher_fp32_torch": {
+      "macro_f1": 0.8799,
+      "ci": [
+        0.8669,
+        0.8929
+      ],
+      "accuracy": 0.8721
+    },
+    "topic_shipped_system": {
+      "macro_f1": 0.8768,
+      "ci": [
+        0.8634,
+        0.8897
+      ],
+      "accuracy": 0.8717
+    },
+    "teacher_minus_topic_tfidf_word": {
+      "diff_macro_f1_points": 8.39,
+      "ci_points": [
+        7.19,
+        9.6
+      ],
+      "meets_plus_8_points": true,
+      "ci_lower_meets_plus_8": false
+    },
+    "shipped_minus_topic_tfidf_word": {
+      "diff_macro_f1_points": 8.08,
+      "ci_points": [
+        6.86,
+        9.36
+      ],
+      "meets_plus_8_points": true,
+      "ci_lower_meets_plus_8": false
+    },
+    "teacher_minus_topic_tfidf_char": {
+      "diff_macro_f1_points": 8.52,
+      "ci_points": [
+        7.32,
+        9.8
+      ],
+      "meets_plus_8_points": true,
+      "ci_lower_meets_plus_8": false
+    },
+    "shipped_minus_topic_tfidf_char": {
+      "diff_macro_f1_points": 8.21,
+      "ci_points": [
+        6.96,
+        9.56
+      ],
+      "meets_plus_8_points": true,
+      "ci_lower_meets_plus_8": false
+    }
+  },
+  "sentiment": {
+    "sentiment_tfidf_word": {
+      "macro_f1": 0.8806,
+      "ci": [
+        0.8665,
+        0.8931
+      ]
+    },
+    "sentiment_tfidf_char": {
+      "macro_f1": 0.9171,
+      "ci": [
+        0.9058,
+        0.9281
+      ]
+    },
+    "sentiment_model": {
+      "macro_f1": 0.9185,
+      "ci": [
+        0.9068,
+        0.9292
+      ]
+    },
+    "model_minus_tfidf_char_points": {
+      "diff": 0.14,
+      "ci": [
+        -0.08,
+        0.38
+      ]
+    }
+  },
+  "pii": {
+    "n_cases": 60,
+    "leaks": 0,
+    "recall": 1.0,
+    "details": []
+  },
+  "ner": {
+    "n_test_sentences": 598,
+    "entity_f1": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "per_type": {
+      "LOCATION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 490.0
+      },
+      "PERSON": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 445.0
+      },
+      "SERVICE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 529.0
+      }
+    },
+    "by_language": {
+      "ar": 1.0,
+      "en": 1.0
+    },
+    "clitic_tests": {
+      "و": {
+        "pass_rate": 1.0,
+        "n": 672
+      },
+      "ب": {
+        "pass_rate": 1.0,
+        "n": 672
+      },
+      "ل": {
+        "pass_rate": 1.0,
+        "n": 672
+      },
+      "ف": {
+        "pass_rate": 1.0,
+        "n": 672
+      },
+      "وب": {
+        "pass_rate": 1.0,
+        "n": 672
+      },
+      "ول": {
+        "pass_rate": 1.0,
+        "n": 672
+      },
+      "فب": {
+        "pass_rate": 1.0,
+        "n": 672
+      }
+    },
+    "meets_0.80": true
+  },
+  "qa_test_split": {
+    "answerable_em": 0.5,
+    "answerable_f1": 0.7746,
+    "null_acc": 0.9167,
+    "n_answerable": 72,
+    "n_null": 12,
+    "score": 0.8456
+  },
+  "qa_smoke20": {
+    "n": 12,
+    "correct_strict_EM": 12,
+    "correct_lenient_F1>=0.5": 12,
+    "meets_17_of_20": false,
+    "rows": [
+      {
+        "question": "What is the refund processing fee?",
+        "impossible": true,
+        "gold": [],
+        "pred": "",
+        "margin": -17.41,
+        "ok_strict": true
+      },
+      {
+        "question": "Which browser is recommended?",
+        "impossible": true,
+        "gold": [],
+        "pred": "",
+        "margin": -18.43,
+        "ok_strict": true
+      },
+      {
+        "question": "Can I use fingerprint login?",
+        "impossible": true,
+        "gold": [],
+        "pred": "",
+        "margin": -18.34,
+        "ok_strict": true
+      },
+      {
+        "question": "How long does a refund review take?",
+        "impossible": false,
+        "gold": [
+          "five business days"
+        ],
+        "pred": "five business days",
+        "margin": 17.03,
+        "ok_strict": true
+      },
+      {
+        "question": "What should be saved when the portal shows an error?",
+        "impossible": false,
+        "gold": [
+          "the portal error reference"
+        ],
+        "pred": "the portal error reference",
+        "margin": 15.41,
+        "ok_strict": true
+      },
+      {
+        "question": "How can users reset passwords?",
+        "impossible": false,
+        "gold": [
+          "using the registered email or mobile number"
+        ],
+        "pred": "using the registered email or mobile number",
+        "margin": 16.14,
+        "ok_strict": true
+      },
+      {
+        "question": "How early should visitors arrive?",
+        "impossible": false,
+        "gold": [
+          "15 minutes before their appointment"
+        ],
+        "pred": "15 minutes before their appointment",
+        "margin": 14.98,
+        "ok_strict": true
+      },
+      {
+        "question": "How long does a building permit decision normally take?",
+        "impossible": false,
+        "gold": [
+          "15 working days"
+        ],
+        "pred": "15 working days",
+        "margin": 16.47,
+        "ok_strict": true
+      },
+      {
+        "question": "Where can transport cards be topped up?",
+        "impossible": false,
+        "gold": [
+          "any station machine or in the app"
+        ],
+        "pred": "any station machine or in the app",
+        "margin": 16.34,
+        "ok_strict": true
+      },
+      {
+        "question": "Who must remove construction debris?",
+        "impossible": false,
+        "gold": [
+          "a licensed contractor"
+        ],
+        "pred": "a licensed contractor",
+        "margin": 16.04,
+        "ok_strict": true
+      },
+      {
+        "question": "When can customers request a water tanker?",
+        "impossible": false,
+        "gold": [
+          "when supply is cut for more than 12 hours"
+        ],
+        "pred": "when supply is cut for more than 12 hours",
+        "margin": 16.46,
+        "ok_strict": true
+      },
+      {
+        "question": "For how long can payment receipts be downloaded?",
+        "impossible": false,
+        "gold": [
+          "twelve months"
+        ],
+        "pred": "twelve months",
+        "margin": 17.03,
+        "ok_strict": true
+      }
+    ]
+  },
+  "search": {
+    "n_test_queries": 75,
+    "n_answerable": 65,
+    "dense_stage1_only": {
+      "recall@10": [
+        0.9077,
+        0.8308,
+        0.9692
+      ],
+      "mrr@10": [
+        0.7855,
+        0.6933,
+        0.8696
+      ]
+    },
+    "two_stage_anchor_rescore": {
+      "recall@10": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mrr@10": [
+        0.9923,
+        0.9769,
+        1.0
+      ]
+    },
+    "no_answer": {
+      "threshold": 1.1966615128517157,
+      "accuracy_on_no_answer_queries": 1.0,
+      "false_no_answer_rate_on_answerable": 0.0,
+      "n_no_answer": 10
+    },
+    "shipped_stage2": "anchor_rescore",
+    "meets_recall@10>=0.80": true,
+    "meets_mrr@10>=0.70": true
+  }
+}

@@ -1,0 +1,11 @@
+slice,value,n,macro_f1,ci_low,ci_high,accuracy,small_sample
+language,ar,1147,0.9198,0.9041,0.9351,0.9207,False
+language,en,1238,0.9169,0.8993,0.9332,0.9216,False
+dialect_region,Egyptian,136,0.9329,0.884,0.9688,0.9338,False
+dialect_region,English,1238,0.9169,0.8993,0.9332,0.9216,False
+dialect_region,Gulf,606,0.9242,0.9019,0.9447,0.9257,False
+dialect_region,Levantine,109,0.8581,0.7846,0.9154,0.8624,False
+dialect_region,MSA,296,0.9269,0.8967,0.9547,0.9257,False
+len_bucket,long(>12w),1512,0.9234,0.9094,0.9368,0.9279,False
+len_bucket,medium(7-12w),831,0.8944,0.8703,0.9182,0.9097,False
+len_bucket,short(<=6w),42,0.616,0.5578,0.9741,0.9048,True

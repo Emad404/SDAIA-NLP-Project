@@ -1,0 +1,9 @@
+class,precision,recall,f1,support
+account_access,0.9427,0.843,0.8901,293
+appointments,0.6896,0.9482,0.7985,328
+billing,0.7886,0.9405,0.8579,353
+digital_services,0.9776,0.7649,0.8583,285
+outage,0.9255,0.8671,0.8954,301
+permits,0.9492,0.8127,0.8757,299
+transport,0.9788,0.8817,0.9277,262
+waste,0.9291,0.8939,0.9112,264

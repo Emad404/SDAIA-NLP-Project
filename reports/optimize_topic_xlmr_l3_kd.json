@@ -1,0 +1,61 @@
+{
+  "model": "topic_xlmr_l3_kd",
+  "threads": 2,
+  "hardware": {
+    "cpu_model": "Intel(R) Xeon(R) CPU @ 2.00GHz",
+    "logical_cores": 2,
+    "python": "3.13.16",
+    "torch": "2.14.1+cu130",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39"
+  },
+  "val_n": 1634,
+  "sizes_mb": {
+    "onnx_fp32": 857.1,
+    "onnx_int8": 214.5
+  },
+  "rungs": {
+    "R0_torch_fp32_pad128": {
+      "val_macro_f1": 0.8778,
+      "n": 600,
+      "p50": 66.13,
+      "p95": 201.57,
+      "p99": 302.1,
+      "mean": 84.63,
+      "accuracy_tax_vs_R1": 0.0
+    },
+    "R1_torch_fp32_dynamic_pad": {
+      "val_macro_f1": 0.8778,
+      "n": 600,
+      "p50": 29.52,
+      "p95": 61.95,
+      "p99": 205.08,
+      "mean": 36.03,
+      "accuracy_tax_vs_R1": 0.0
+    },
+    "R2_ort_fp32": {
+      "val_macro_f1": 0.8778,
+      "n": 600,
+      "p50": 15.01,
+      "p95": 31.68,
+      "p99": 41.6,
+      "mean": 16.74,
+      "accuracy_tax_vs_R1": 0.0
+    },
+    "R3_ort_int8_dynamic": {
+      "val_macro_f1": 0.8776,
+      "n": 600,
+      "p50": 10.47,
+      "p95": 31.25,
+      "p99": 39.69,
+      "mean": 13.42,
+      "accuracy_tax_vs_R1": -0.0002
+    }
+  },
+  "parity": {
+    "R2_vs_R1_argmax_agreement": 1.0,
+    "R3_vs_R1_argmax_agreement": 0.9908200734394125,
+    "R2_max_abs_prob_diff": 3.844499588012695e-06,
+    "R3_max_abs_prob_diff": 0.19655126333236694
+  },
+  "benchmark_notes": "batch=1, warm-up 30 requests discarded, 300 real val messages x2 passes, threads pinned, no concurrency (HTTP/16-user test is s07)"
+}

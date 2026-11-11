@@ -1,0 +1,25 @@
+{
+  "service_version": "1.0.0",
+  "preproc_version": "1.0.0",
+  "threads": 1,
+  "topic": {
+    "general": "topic_xlmr_l3_kd",
+    "dialect_aware": null,
+    "route_dialects": [],
+    "default_precision": "int8",
+    "accuracy_reference": "topic_xlmr_all_ca",
+    "quantisation_decision": "tax 0.02 pt (limit 1.0), speedup 1.43x (need 1.25x) -> default int8; fp32 kept as rollback (BAYAN_PRECISION=fp32)"
+  },
+  "sentiment": "sent_xlmr_all",
+  "ner": "ner_xlmr_clitic_aug",
+  "qa": "qa_xlmr_squad2_ft",
+  "search": true,
+  "max_wait_ms": 0,
+  "max_batch": 16,
+  "serving_notes": "general=3-layer KD student chosen for latency (teacher is the accuracy reference); 1 ORT thread, no batching wait; run server and clients on separate cores for the 16-user benchmark",
+  "aux_precision": {
+    "ner": "fp32",
+    "qa": "fp32",
+    "embedder": "fp32"
+  }
+}

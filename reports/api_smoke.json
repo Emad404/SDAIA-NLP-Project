@@ -1,0 +1,60 @@
+{
+ "health": {
+  "status": "ok",
+  "precision": "int8",
+  "versions": {
+   "preproc": "1.0.0",
+   "service": "1.0.0",
+   "index": "cases_v1"
+  },
+  "canaries_ok": true,
+  "n_canary_checks": 15
+ },
+ "canaries_failed": [],
+ "classify_ar": {
+  "topic": "outage",
+  "topic_confidence": 0.9766,
+  "language": "ar",
+  "dialect": null,
+  "model": "general"
+ },
+ "analyze_en": {
+  "classified": {
+   "topic": "billing",
+   "topic_confidence": 0.9589,
+   "language": "en",
+   "dialect": null,
+   "model": "general",
+   "sentiment": "neutral",
+   "sentiment_confidence": 0.9567
+  },
+  "extracted": {
+   "entities": [],
+   "pii_found": [
+    "phone"
+   ],
+   "masked_text": "My bill is wrong again, please call me on <PHONE>"
+  },
+  "similar_cases": {
+   "no_answer": true,
+   "top_score": 0.3875,
+   "results": []
+  }
+ },
+ "analyze_batch_n": 2,
+ "ask_answerable": {
+  "answer": "using the registered email or mobile number",
+  "doc_id": "D3",
+  "title": "Account access",
+  "margin": 8.793,
+  "no_answer": false
+ },
+ "ask_unanswerable": {
+  "answer": null,
+  "no_answer": true,
+  "best_margin": -17.824,
+  "threshold": -8.0
+ },
+ "bad_request_status": 422,
+ "all_ok": true
+}

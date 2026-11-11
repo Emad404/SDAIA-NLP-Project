@@ -1,0 +1,94 @@
+{
+  "precision": "int8",
+  "users": 16,
+  "seconds": 20,
+  "requests": 679,
+  "errors": 0,
+  "rps": 39.9,
+  "p50_ms": 353.36,
+  "p95_ms": 649.21,
+  "p99_ms": 699.59,
+  "max_ms": 816.16,
+  "meets_p99_le_40ms": false,
+  "headline_mean_think_ms": 0.0,
+  "runs": [
+    {
+      "mean_think_ms": 0.0,
+      "users": 16,
+      "seconds": 20,
+      "requests": 679,
+      "errors": 0,
+      "rps": 39.9,
+      "p50_ms": 353.36,
+      "p95_ms": 649.21,
+      "p99_ms": 699.59,
+      "max_ms": 816.16,
+      "meets_p99_le_40ms": false
+    },
+    {
+      "mean_think_ms": 100.0,
+      "users": 16,
+      "seconds": 20,
+      "requests": 760,
+      "errors": 0,
+      "rps": 44.7,
+      "p50_ms": 230.73,
+      "p95_ms": 519.94,
+      "p99_ms": 610.21,
+      "max_ms": 653.2,
+      "meets_p99_le_40ms": false
+    },
+    {
+      "mean_think_ms": 250.0,
+      "users": 16,
+      "seconds": 20,
+      "requests": 754,
+      "errors": 0,
+      "rps": 44.4,
+      "p50_ms": 91.34,
+      "p95_ms": 384.42,
+      "p99_ms": 468.29,
+      "max_ms": 501.13,
+      "meets_p99_le_40ms": false
+    },
+    {
+      "mean_think_ms": 500.0,
+      "users": 16,
+      "seconds": 20,
+      "requests": 499,
+      "errors": 0,
+      "rps": 29.4,
+      "p50_ms": 35.85,
+      "p95_ms": 201.03,
+      "p99_ms": 277.66,
+      "max_ms": 305.84,
+      "meets_p99_le_40ms": false
+    }
+  ],
+  "micro_batch": {
+    "max_batch": 16,
+    "max_wait_ms": 2.0
+  },
+  "server_threads": 2,
+  "hardware": {
+    "cpu_model": "Intel(R) Xeon(R) CPU @ 2.00GHz",
+    "logical_cores": 2,
+    "python": "3.13.16",
+    "torch": "2.14.1+cu130",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39"
+  },
+  "service_health": {
+    "status": "ok",
+    "precision": "int8",
+    "versions": {
+      "preproc": "1.0.0",
+      "service": "1.0.0",
+      "index": "cases_v1"
+    },
+    "canaries_ok": true,
+    "n_canary_checks": 15
+  },
+  "caveat": "load generator and server share the same 2-vCPU Colab VM; the lab CPU may differ",
+  "model": "topic_xlmr_l4_kd",
+  "router_enabled": false
+}

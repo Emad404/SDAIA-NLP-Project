@@ -1,0 +1,55 @@
+{
+  "name": "topic_camelbert_mix_ar",
+  "task": "topic",
+  "checkpoint": "CAMeL-Lab/bert-base-arabic-camelbert-mix",
+  "lang": "ar",
+  "profile": "camelbert",
+  "labels": [
+    "account_access",
+    "appointments",
+    "billing",
+    "digital_services",
+    "outage",
+    "permits",
+    "transport",
+    "waste"
+  ],
+  "preproc_version": "1.0.0",
+  "seed": 42,
+  "epochs_run": 3,
+  "best_epoch": 1,
+  "lr": 3e-05,
+  "bs": 32,
+  "max_len_train": 96,
+  "max_len_infer": 128,
+  "n_train": 3964,
+  "n_val": 889,
+  "val_macro_f1": 0.8699,
+  "val_ci": [
+    0.8455,
+    0.8894
+  ],
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.15649959132556,
+      "seconds": 14.2,
+      "score": 0.869926198474942,
+      "val_acc": 0.8672665916760405
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.3966268562982159,
+      "seconds": 13.9,
+      "score": 0.8594248655204024,
+      "val_acc": 0.8672665916760405
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.3494437397007019,
+      "seconds": 14.2,
+      "score": 0.8642211167188938,
+      "val_acc": 0.8683914510686164
+    }
+  ]
+}

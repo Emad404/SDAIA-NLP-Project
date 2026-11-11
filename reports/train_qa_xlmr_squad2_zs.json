@@ -1,0 +1,19 @@
+{
+  "name": "qa_xlmr_squad2_zs",
+  "checkpoint": "deepset/xlm-roberta-base-squad2",
+  "zero_shot": true,
+  "null_margin_threshold": -1.0,
+  "val": {
+    "answerable_em": 0.4,
+    "answerable_f1": 0.8038095238095235,
+    "null_acc": 1.0,
+    "n_answerable": 45,
+    "n_null": 19,
+    "score": 0.9019047619047618
+  },
+  "history": [],
+  "best_epoch": 0,
+  "n_train": 452,
+  "n_val": 64,
+  "preproc_version": "1.0.0"
+}

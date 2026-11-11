@@ -1,0 +1,30 @@
+{
+  "topic_word": {
+    "val_macro_f1": 0.7953,
+    "ci": [
+      0.7749,
+      0.8132
+    ]
+  },
+  "topic_char": {
+    "val_macro_f1": 0.8024,
+    "ci": [
+      0.7811,
+      0.8207
+    ]
+  },
+  "sentiment_word": {
+    "val_macro_f1": 0.8725,
+    "ci": [
+      0.856,
+      0.8891
+    ]
+  },
+  "sentiment_char": {
+    "val_macro_f1": 0.9171,
+    "ci": [
+      0.9038,
+      0.931
+    ]
+  }
+}

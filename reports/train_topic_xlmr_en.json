@@ -1,0 +1,62 @@
+{
+  "name": "topic_xlmr_en",
+  "task": "topic",
+  "checkpoint": "xlm-roberta-base",
+  "lang": "en",
+  "profile": "xlmr",
+  "labels": [
+    "account_access",
+    "appointments",
+    "billing",
+    "digital_services",
+    "outage",
+    "permits",
+    "transport",
+    "waste"
+  ],
+  "preproc_version": "1.0.0",
+  "seed": 42,
+  "epochs_run": 4,
+  "best_epoch": 4,
+  "lr": 3e-05,
+  "bs": 32,
+  "max_len_train": 96,
+  "max_len_infer": 128,
+  "n_train": 4017,
+  "n_val": 745,
+  "val_macro_f1": 0.8763,
+  "val_ci": [
+    0.8524,
+    0.8976
+  ],
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.3446409976671612,
+      "seconds": 24.1,
+      "score": 0.8578806166424906,
+      "val_acc": 0.8577181208053691
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.42047098870315247,
+      "seconds": 23.8,
+      "score": 0.8712787734741009,
+      "val_acc": 0.8684563758389262
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.3759656527212688,
+      "seconds": 23.7,
+      "score": 0.8700725929729619,
+      "val_acc": 0.8657718120805369
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.3552263927838159,
+      "seconds": 23.5,
+      "score": 0.8763105966751082,
+      "val_acc": 0.8711409395973154
+    }
+  ]
+}

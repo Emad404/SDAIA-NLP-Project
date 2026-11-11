@@ -1,0 +1,71 @@
+{
+  "rule": "INT8 only if tax <= 1.0 pt (embedder MRR@10: <= 2.0 pt) and p50 speedup >= 1.25x; else fp32",
+  "models": {
+    "classifier:topic_xlmr_l3_kd": {
+      "val_macro_f1_fp32": 0.8778,
+      "val_macro_f1_int8": 0.8776,
+      "accuracy_tax_points": 0.02,
+      "p50_ms_best_fp32": 15.01,
+      "p50_ms_int8": 10.47,
+      "p50_speedup": 1.43,
+      "decision": "int8",
+      "why": "tax 0.02 pt (limit 1.0), speedup 1.43x (need 1.25x)"
+    },
+    "ner": {
+      "fp32": {
+        "val_entity_f1": 1.0,
+        "p50_ms": 98.49,
+        "p95_ms": 214.55,
+        "p99_ms": 529.72
+      },
+      "int8": {
+        "val_entity_f1": 0.9874,
+        "p50_ms": 34.23,
+        "p95_ms": 94.34,
+        "p99_ms": 310.61
+      },
+      "accuracy_tax_points": 1.26,
+      "p50_speedup": 2.88,
+      "decision": "fp32",
+      "why": "tax 1.26 pt (limit 1.0), speedup 2.88x (need 1.25x)"
+    },
+    "qa": {
+      "fp32": {
+        "val_score": 0.9844,
+        "p50_ms": 199.34,
+        "p95_ms": 621.39,
+        "p99_ms": 824.32
+      },
+      "int8": {
+        "val_score": 0.8382,
+        "p50_ms": 129.58,
+        "p95_ms": 478.33,
+        "p99_ms": 519.87
+      },
+      "accuracy_tax_points": 14.62,
+      "p50_speedup": 1.54,
+      "decision": "fp32",
+      "why": "tax 14.62 pt (limit 1.0), speedup 1.54x (need 1.25x)"
+    },
+    "embedder_query_encoder": {
+      "fp32": {
+        "dev_recall@10": 1.0,
+        "dev_mrr@10": 1.0,
+        "p50_ms": 105.95,
+        "p95_ms": 416.53,
+        "p99_ms": 639.33
+      },
+      "int8": {
+        "dev_recall@10": 1.0,
+        "dev_mrr@10": 0.9731,
+        "p50_ms": 43.3,
+        "p95_ms": 55.51,
+        "p99_ms": 64.0
+      },
+      "accuracy_tax_points": 2.69,
+      "p50_speedup": 2.45,
+      "decision": "fp32",
+      "why": "tax 2.69 pt (limit 2.0), speedup 2.45x (need 1.25x)"
+    }
+  }
+}

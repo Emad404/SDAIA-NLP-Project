@@ -1,0 +1,57 @@
+{
+  "name": "sent_xlmr_all",
+  "task": "sentiment",
+  "checkpoint": "xlm-roberta-base",
+  "lang": "all",
+  "profile": "xlmr",
+  "labels": [
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "preproc_version": "1.0.0",
+  "seed": 42,
+  "epochs_run": 4,
+  "best_epoch": 2,
+  "lr": 3e-05,
+  "bs": 32,
+  "max_len_train": 96,
+  "max_len_infer": 128,
+  "n_train": 7981,
+  "n_val": 1634,
+  "val_macro_f1": 0.9219,
+  "val_ci": [
+    0.909,
+    0.9355
+  ],
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.5588014264106751,
+      "seconds": 48.6,
+      "score": 0.9188672419574003,
+      "val_acc": 0.9216646266829865
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.34627040338516235,
+      "seconds": 47.0,
+      "score": 0.921926036714134,
+      "val_acc": 0.9247246022031824
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.34171185970306395,
+      "seconds": 47.9,
+      "score": 0.921926036714134,
+      "val_acc": 0.9247246022031824
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.33284147834777833,
+      "seconds": 47.4,
+      "score": 0.9213363806505814,
+      "val_acc": 0.9241126070991432
+    }
+  ]
+}

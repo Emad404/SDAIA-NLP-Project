@@ -1,0 +1,379 @@
+{
+  "mft_topic": {
+    "pass_rate": 0.9583333333333334,
+    "n": 120,
+    "by_group": {
+      "en": {
+        "pass_rate": 0.9375,
+        "n": 48
+      },
+      "ar": {
+        "pass_rate": 0.9791666666666666,
+        "n": 48
+      },
+      "gulf": {
+        "pass_rate": 0.9583333333333334,
+        "n": 24
+      }
+    },
+    "failures": [
+      {
+        "text": "I need to book an appointment at the passport office",
+        "label": "appointments",
+        "group": "en",
+        "pred": "permits",
+        "ok": false
+      },
+      {
+        "text": "My electricity bill is much higher than usual",
+        "label": "billing",
+        "group": "en",
+        "pred": "outage",
+        "ok": false
+      },
+      {
+        "text": "فاتورة الكهرباء أعلى بكثير من المعتاد",
+        "label": "billing",
+        "group": "ar",
+        "pred": "outage",
+        "ok": false
+      },
+      {
+        "text": "The app does not show my application status",
+        "label": "digital_services",
+        "group": "en",
+        "pred": "permits",
+        "ok": false
+      },
+      {
+        "text": "ما في موية من أمس",
+        "label": "outage",
+        "group": "gulf",
+        "pred": "billing",
+        "ok": false
+      }
+    ]
+  },
+  "mft_topic_core": {
+    "pass_rate": 0.9583333333333334,
+    "n": 96,
+    "by_group": {
+      "en": {
+        "pass_rate": 0.9375,
+        "n": 48
+      },
+      "ar": {
+        "pass_rate": 0.9791666666666666,
+        "n": 48
+      }
+    }
+  },
+  "mft_sentiment": {
+    "pass_rate": 0.75,
+    "n": 24,
+    "by_group": {
+      "en": {
+        "pass_rate": 0.8333333333333334,
+        "n": 12
+      },
+      "ar": {
+        "pass_rate": 0.6666666666666666,
+        "n": 12
+      }
+    },
+    "failures": [
+      {
+        "text": "الموظفون متعاونون ومحترمون",
+        "label": "positive",
+        "group": "ar",
+        "pred": "neutral",
+        "ok": false
+      },
+      {
+        "text": "I am very disappointed with the long delay",
+        "label": "negative",
+        "group": "en",
+        "pred": "neutral",
+        "ok": false
+      },
+      {
+        "text": "I am angry that nobody answered my calls",
+        "label": "negative",
+        "group": "en",
+        "pred": "neutral",
+        "ok": false
+      },
+      {
+        "text": "أنا محبط جدا من التأخير الطويل",
+        "label": "negative",
+        "group": "ar",
+        "pred": "neutral",
+        "ok": false
+      },
+      {
+        "text": "أسوأ تجربة ولم يساعدني أحد",
+        "label": "negative",
+        "group": "ar",
+        "pred": "neutral",
+        "ok": false
+      },
+      {
+        "text": "أنا غاضب لأن أحدا لم يرد على اتصالاتي",
+        "label": "negative",
+        "group": "ar",
+        "pred": "neutral",
+        "ok": false
+      }
+    ]
+  },
+  "invariance_topic": {
+    "change_numbers": {
+      "invariance": 1.0,
+      "n": 120
+    },
+    "arabic_indic_digits": {
+      "invariance": 1.0,
+      "n": 214
+    },
+    "trailing_period": {
+      "invariance": 0.99,
+      "n": 300
+    },
+    "extra_whitespace": {
+      "invariance": 1.0,
+      "n": 300
+    },
+    "english_uppercase": {
+      "invariance": 0.9433333333333334,
+      "n": 300
+    },
+    "english_lowercase": {
+      "invariance": 0.9933333333333333,
+      "n": 300
+    },
+    "arabic_tatweel": {
+      "invariance": 1.0,
+      "n": 300
+    },
+    "append_phone_number": {
+      "invariance": 0.99,
+      "n": 300
+    },
+    "append_email": {
+      "invariance": 0.99,
+      "n": 300
+    },
+    "append_national_id": {
+      "invariance": 0.99,
+      "n": 300
+    },
+    "_mean": 0.9896666666666667,
+    "_min": 0.9433333333333334
+  },
+  "invariance_topic_failures": {
+    "change_numbers": [],
+    "arabic_indic_digits": [],
+    "trailing_period": [
+      {
+        "original": "ياِخي ما وصلنُي اِلمبِلغ الَمسترَد 150 رَيالّ بعد مرور 4 أُيام اُلله يعافيِكم. هذه الّمرة الثالثة اَلتي أَبلغ فيها. 😞 جّوالي 0588132440",
+        "perturbed": "ياِخي ما وصلنُي اِلمبِلغ الَمسترَد 150 رَيالّ بعد مرور 4 أُيام اُلله يعافيِكم. هذه الّمرة الثالثة اَلتي أَبلغ فيها. 😞 جّوالي 0588132440.",
+        "pred_orig": "permits",
+        "pred_pert": "billing"
+      },
+      {
+        "original": "Honestly, I was sent from one department to another. Reporting this for the third time. 😞",
+        "perturbed": "Honestly, I was sent from one department to another. Reporting this for the third time. 😞.",
+        "pred_orig": "outage",
+        "pred_pert": "appointments"
+      },
+      {
+        "original": "For the record, This is the third time I am writing about this",
+        "perturbed": "For the record, This is the third time I am writing about this.",
+        "pred_orig": "billing",
+        "pred_pert": "appointments"
+      }
+    ],
+    "extra_whitespace": [],
+    "english_uppercase": [
+      {
+        "original": "Please escalate this to a manager. Thank you, it was sorted out. !",
+        "perturbed": "PLEASE ESCALATE THIS TO A MANAGER. THANK YOU, IT WAS SORTED OUT. !",
+        "pred_orig": "appointments",
+        "pred_pert": "digital_services"
+      },
+      {
+        "original": "Really frustrated. Why does this take so long? Please fix this. 😤",
+        "perturbed": "REALLY FRUSTRATED. WHY DOES THIS TAKE SO LONG? PLEASE FIX THIS. 😤",
+        "pred_orig": "appointments",
+        "pred_pert": "billing"
+      },
+      {
+        "original": "Reminder: The answer I received was not helpful 😤",
+        "perturbed": "REMINDER: THE ANSWER I RECEIVED WAS NOT HELPFUL 😤",
+        "pred_orig": "appointments",
+        "pred_pert": "digital_services"
+      },
+      {
+        "original": "For the record, This is the third time I am writing about this",
+        "perturbed": "FOR THE RECORD, THIS IS THE THIRD TIME I AM WRITING ABOUT THIS",
+        "pred_orig": "billing",
+        "pred_pert": "appointments"
+      },
+      {
+        "original": "Reminder: The answer I received was not helpful. Please fix this. 😡",
+        "perturbed": "REMINDER: THE ANSWER I RECEIVED WAS NOT HELPFUL. PLEASE FIX THIS. 😡",
+        "pred_orig": "appointments",
+        "pred_pert": "digital_services"
+      },
+      {
+        "original": "Question: Why does this take so long? It is about the paperwork. Let me know.",
+        "perturbed": "QUESTION: WHY DOES THIS TAKE SO LONG? IT IS ABOUT THE PAPERWORK. LET ME KNOW.",
+        "pred_orig": "permits",
+        "pred_pert": "outage"
+      },
+      {
+        "original": "Again? Why does this take so long? It is about the paperwork. This is not acceptable. 😤 emial me at khalid5@example.org",
+        "perturbed": "AGAIN? WHY DOES THIS TAKE SO LONG? IT IS ABOUT THE PAPERWORK. THIS IS NOT ACCEPTABLE. 😤 EMIAL ME AT KHALID5@EXAMPLE.ORG",
+        "pred_orig": "permits",
+        "pred_pert": "outage"
+      },
+      {
+        "original": "Again? I was sent from one department to another. Reporting this for the third time. !!!",
+        "perturbed": "AGAIN? I WAS SENT FROM ONE DEPARTMENT TO ANOTHER. REPORTING THIS FOR THE THIRD TIME. !!!",
+        "pred_orig": "appointments",
+        "pred_pert": "outage"
+      }
+    ],
+    "english_lowercase": [
+      {
+        "original": "Honestly, I was sent from one department to another. Reporting this for the third time. 😞",
+        "perturbed": "honestly, i was sent from one department to another. reporting this for the third time. 😞",
+        "pred_orig": "outage",
+        "pred_pert": "appointments"
+      },
+      {
+        "original": "Good news: The waetr has been cut off for 6 hours. Thank you, it was sorted out. !",
+        "perturbed": "good news: the waetr has been cut off for 6 hours. thank you, it was sorted out. !",
+        "pred_orig": "outage",
+        "pred_pert": "transport"
+      }
+    ],
+    "arabic_tatweel": [],
+    "append_phone_number": [
+      {
+        "original": "ياِخي ما وصلنُي اِلمبِلغ الَمسترَد 150 رَيالّ بعد مرور 4 أُيام اُلله يعافيِكم. هذه الّمرة الثالثة اَلتي أَبلغ فيها. 😞 جّوالي 0588132440",
+        "perturbed": "ياِخي ما وصلنُي اِلمبِلغ الَمسترَد 150 رَيالّ بعد مرور 4 أُيام اُلله يعافيِكم. هذه الّمرة الثالثة اَلتي أَبلغ فيها. 😞 جّوالي 0588132440 0551234567",
+        "pred_orig": "permits",
+        "pred_pert": "billing"
+      },
+      {
+        "original": "Honestly, I was sent from one department to another. Reporting this for the third time. 😞",
+        "perturbed": "Honestly, I was sent from one department to another. Reporting this for the third time. 😞 0551234567",
+        "pred_orig": "outage",
+        "pred_pert": "appointments"
+      },
+      {
+        "original": "For the record, This is the third time I am writing about this",
+        "perturbed": "For the record, This is the third time I am writing about this 0551234567",
+        "pred_orig": "billing",
+        "pred_pert": "appointments"
+      }
+    ],
+    "append_email": [
+      {
+        "original": "ياِخي ما وصلنُي اِلمبِلغ الَمسترَد 150 رَيالّ بعد مرور 4 أُيام اُلله يعافيِكم. هذه الّمرة الثالثة اَلتي أَبلغ فيها. 😞 جّوالي 0588132440",
+        "perturbed": "ياِخي ما وصلنُي اِلمبِلغ الَمسترَد 150 رَيالّ بعد مرور 4 أُيام اُلله يعافيِكم. هذه الّمرة الثالثة اَلتي أَبلغ فيها. 😞 جّوالي 0588132440 contact a.b@example.com",
+        "pred_orig": "permits",
+        "pred_pert": "billing"
+      },
+      {
+        "original": "Honestly, I was sent from one department to another. Reporting this for the third time. 😞",
+        "perturbed": "Honestly, I was sent from one department to another. Reporting this for the third time. 😞 contact a.b@example.com",
+        "pred_orig": "outage",
+        "pred_pert": "appointments"
+      },
+      {
+        "original": "For the record, This is the third time I am writing about this",
+        "perturbed": "For the record, This is the third time I am writing about this contact a.b@example.com",
+        "pred_orig": "billing",
+        "pred_pert": "account_access"
+      }
+    ],
+    "append_national_id": [
+      {
+        "original": "ياِخي ما وصلنُي اِلمبِلغ الَمسترَد 150 رَيالّ بعد مرور 4 أُيام اُلله يعافيِكم. هذه الّمرة الثالثة اَلتي أَبلغ فيها. 😞 جّوالي 0588132440",
+        "perturbed": "ياِخي ما وصلنُي اِلمبِلغ الَمسترَد 150 رَيالّ بعد مرور 4 أُيام اُلله يعافيِكم. هذه الّمرة الثالثة اَلتي أَبلغ فيها. 😞 جّوالي 0588132440 1012345678",
+        "pred_orig": "permits",
+        "pred_pert": "billing"
+      },
+      {
+        "original": "Honestly, I was sent from one department to another. Reporting this for the third time. 😞",
+        "perturbed": "Honestly, I was sent from one department to another. Reporting this for the third time. 😞 1012345678",
+        "pred_orig": "outage",
+        "pred_pert": "appointments"
+      },
+      {
+        "original": "For the record, This is the third time I am writing about this",
+        "perturbed": "For the record, This is the third time I am writing about this 1012345678",
+        "pred_orig": "billing",
+        "pred_pert": "appointments"
+      }
+    ]
+  },
+  "invariance_sentiment": {
+    "change_numbers": {
+      "invariance": 1.0,
+      "n": 120
+    },
+    "arabic_indic_digits": {
+      "invariance": 1.0,
+      "n": 214
+    },
+    "trailing_period": {
+      "invariance": 1.0,
+      "n": 300
+    },
+    "extra_whitespace": {
+      "invariance": 1.0,
+      "n": 300
+    },
+    "english_uppercase": {
+      "invariance": 1.0,
+      "n": 300
+    },
+    "english_lowercase": {
+      "invariance": 1.0,
+      "n": 300
+    },
+    "arabic_tatweel": {
+      "invariance": 1.0,
+      "n": 300
+    },
+    "append_phone_number": {
+      "invariance": 1.0,
+      "n": 300
+    },
+    "append_email": {
+      "invariance": 1.0,
+      "n": 300
+    },
+    "append_national_id": {
+      "invariance": 1.0,
+      "n": 300
+    },
+    "_mean": 1.0,
+    "_min": 1.0
+  },
+  "invariance_sentiment_failures": {
+    "change_numbers": [],
+    "arabic_indic_digits": [],
+    "trailing_period": [],
+    "extra_whitespace": [],
+    "english_uppercase": [],
+    "english_lowercase": [],
+    "arabic_tatweel": [],
+    "append_phone_number": [],
+    "append_email": [],
+    "append_national_id": []
+  }
+}

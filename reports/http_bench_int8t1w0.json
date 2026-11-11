@@ -1,0 +1,81 @@
+{
+  "precision": "int8",
+  "users": 16,
+  "seconds": 20,
+  "requests": 1022,
+  "errors": 0,
+  "rps": 60.1,
+  "p50_ms": 20.22,
+  "p95_ms": 75.48,
+  "p99_ms": 100.29,
+  "max_ms": 134.65,
+  "meets_p99_le_40ms": false,
+  "headline_mean_think_ms": 250.0,
+  "runs": [
+    {
+      "mean_think_ms": 250.0,
+      "users": 16,
+      "seconds": 20,
+      "requests": 1022,
+      "errors": 0,
+      "rps": 60.1,
+      "p50_ms": 20.22,
+      "p95_ms": 75.48,
+      "p99_ms": 100.29,
+      "max_ms": 134.65,
+      "meets_p99_le_40ms": false
+    },
+    {
+      "mean_think_ms": 500.0,
+      "users": 16,
+      "seconds": 20,
+      "requests": 541,
+      "errors": 0,
+      "rps": 31.8,
+      "p50_ms": 13.68,
+      "p95_ms": 35.07,
+      "p99_ms": 51.56,
+      "max_ms": 75.18,
+      "meets_p99_le_40ms": false
+    },
+    {
+      "mean_think_ms": 1000.0,
+      "users": 16,
+      "seconds": 20,
+      "requests": 271,
+      "errors": 0,
+      "rps": 15.9,
+      "p50_ms": 12.07,
+      "p95_ms": 37.64,
+      "p99_ms": 55.01,
+      "max_ms": 79.31,
+      "meets_p99_le_40ms": false
+    }
+  ],
+  "micro_batch": {
+    "max_batch": 16,
+    "max_wait_ms": 0.0
+  },
+  "server_threads": 1,
+  "hardware": {
+    "cpu_model": "Intel(R) Xeon(R) CPU @ 2.00GHz",
+    "logical_cores": 2,
+    "python": "3.13.16",
+    "torch": "2.14.1+cu130",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39"
+  },
+  "service_health": {
+    "status": "ok",
+    "precision": "int8",
+    "versions": {
+      "preproc": "1.0.0",
+      "service": "1.0.0",
+      "index": "cases_v1"
+    },
+    "canaries_ok": true,
+    "n_canary_checks": 15
+  },
+  "caveat": "load generator and server share the same 2-vCPU Colab VM; the lab CPU may differ",
+  "model": "topic_xlmr_l3_kd",
+  "router_enabled": false
+}
