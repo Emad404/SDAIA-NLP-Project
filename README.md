@@ -150,4 +150,9 @@ curl -s -X POST localhost:8000/v1/ask -H 'content-type: application/json' -d '{"
 8. **Dialect model:** a genuinely dialect-aware win may need real dialect data rather than synthetic labels.
 
 ---
-*Submission:* upload this repository to GitHub, then submit the repo link in the course Google Form (<https://forms.gle/b2JSZgRKERLRgRvG8>). Course organisation: <https://github.com/SDAIAAcademy>.
+---
+
+## 9. Team
+
+- [Abdulaziz Alamri](https://github.com/AbdulazizAmri)
+- [Emad Alaskar](https://github.com/Emad404)
